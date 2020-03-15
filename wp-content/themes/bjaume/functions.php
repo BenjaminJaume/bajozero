@@ -2,7 +2,9 @@
 
 function load_stylesheet() {
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap.min.css', array(), false, 'all');
+    wp_register_style('bootstrap-css-map', get_template_directory_uri() . '/css/vendor/bootstrap.min.css.map', array(), false, 'all');
     wp_enqueue_style('bootstrap');
+    wp_enqueue_style('bootstrap-css-map');
 
     wp_register_style('custom_stylesheet', get_template_directory_uri() . '/css/custom.css', array(), 1, 'all');
     wp_enqueue_style('custom_stylesheet');
@@ -11,7 +13,6 @@ add_action('wp_enqueue_scripts', 'load_stylesheet');
 
 function load_jquery() {
     wp_deregister_script('jquery');
-    // wp_register_script('jquery', get_template_directory_uri() . '/js/vendor/jquery-3.4.1.min.js', '', '3.4.1', true);
     wp_enqueue_script('jquery', get_template_directory_uri() . '/js/vendor/jquery-3.4.1.min.js', '', '3.4.1', true);
 }
 add_action('wp_enqueue_scripts', 'load_jquery');
@@ -39,5 +40,37 @@ register_nav_menus(
     array(
         'menu' => __("Menu", 'theme')
     )
-)
+    );
+
+function console($data) {
+    echo "<script>console.log('" . json_encode($data) . "');</script>";
+}
+
+
+// Our custom post type function
+function create_posttype() {
+ 
+    register_post_type( 'client',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Clients' ),
+                'singular_name' => __( 'client' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'clients'),
+            'show_in_rest' => true
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+// turn off wysiwig for custom psot types
+add_action('init', 'init_remove_support',100);
+function init_remove_support(){
+    remove_post_type_support( 'client', 'editor');
+    // remove_post_type_support( $post_type, 'editor');
+}
 ?>

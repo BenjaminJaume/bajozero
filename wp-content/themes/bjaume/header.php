@@ -2,6 +2,7 @@
 <html>
     <head>
         <?php wp_head(); ?>
+        <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
     </head>
 
     <body>
@@ -14,7 +15,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">Bajo Zero</a>
                     <?php
                     wp_nav_menu( array(
                         'theme_location'    => 'menu',
