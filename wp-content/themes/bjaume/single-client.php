@@ -10,9 +10,11 @@
             $about_you = get_field('about_you');
         ?>
 
-        <p><?php echo $age; ?></p>
         <p><?php echo $name; ?></p>
+        <p><?php echo $age; ?></p>
         <div><?php echo $about_you; ?></div>
+        <a href="<?php echo(get_site_url() . '/clients') ?>">Go Back to clients</a>
+
 
 
 </div>

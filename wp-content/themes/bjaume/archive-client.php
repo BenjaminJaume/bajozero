@@ -12,10 +12,10 @@
             $about_you = get_field('about_you');
         ?>
 
+        <p><a href="<?php echo(get_site_url() . '/clients/'  . strtolower($name)) ?>"><?php echo $name ?></a></p>
         <p><?php echo $age; ?></p>
-        <p><?php echo $name; ?></p>
         <div><?php echo $about_you; ?></div>
-        <a href="<?php echo(get_site_url() . '/clients/'  . strtolower($name)) ?>">go to <?php echo $name ?></a>
+        
 
     <?php endwhile; endif; ?>
 </div>

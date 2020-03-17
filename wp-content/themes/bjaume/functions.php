@@ -46,8 +46,7 @@ function console($data) {
     echo "<script>console.log('" . json_encode($data) . "');</script>";
 }
 
-
-// Our custom post type function
+// Custom post type function
 function create_posttype() {
  
     register_post_type( 'client',
@@ -65,9 +64,9 @@ function create_posttype() {
     );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
+add_action('init', 'create_posttype');
 
-// turn off wysiwig for custom psot types
+// turn off wysiwig for custom post types
 add_action('init', 'init_remove_support',100);
 function init_remove_support(){
     remove_post_type_support( 'client', 'editor');
