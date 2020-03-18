@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Gothic CG";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Gothic CG No 1"), local("Gothic-CG-No-1"),
+    url("../fonts/Gothic-CG-No-1.woff") format("woff");
+}

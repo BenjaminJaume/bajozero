@@ -2,6 +2,6 @@
 
 <?php get_header(); ?>
 
-<?php echo 'page template' ?>
+<?php echo 'page' ?>
 
 <?php get_footer(); ?>
