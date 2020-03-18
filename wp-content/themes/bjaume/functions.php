@@ -72,4 +72,7 @@ function init_remove_support(){
     remove_post_type_support( 'client', 'editor');
     // remove_post_type_support( $post_type, 'editor');
 }
+
+// PICTURES SIZES
+add_image_size( 'navbar-logo', 32, 32, true );
 ?>

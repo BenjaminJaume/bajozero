@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <div class="container py-5">
-
     
     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
@@ -12,12 +11,15 @@
             $about_you = get_field('about_you');
         ?>
 
-        <p><a href="<?php echo(get_site_url() . '/clients/'  . strtolower($name)) ?>"><?php echo $name ?></a></p>
-        <p><?php echo $age; ?></p>
+        <p><a href="<?php echo(get_site_url() . '/clients/'  . strtolower($name)) ?>"><?php echo $name ?></a> - <?php echo $age . ' years old' ?></p>
         <div><?php echo $about_you; ?></div>
         
+        <p>
+        
+        </p>
 
     <?php endwhile; endif; ?>
+        <?php // echo wp_get_attachment_image(33, '', "", ["class" => "border"] ); ?>
 </div>
 
 <?php get_footer(); ?>

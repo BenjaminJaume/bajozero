@@ -2,7 +2,11 @@
 <html>
     <head>
         <?php wp_head(); ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+
+        <?php global $template; console(basename($template)); ?>
+
     </head>
 
     <body>
@@ -15,7 +19,13 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <a class="navbar-brand" href="#">Bajo Zero</a>
+                    <a class="navbar-brand" href="#">
+                        <?php echo wp_get_attachment_image(33, 'navbar-logo'); ?>
+                        Bajo Zero
+                    </a>
+                        <p>
+                        </p>
+
                     <?php
                     wp_nav_menu( array(
                         'theme_location'    => 'menu',
