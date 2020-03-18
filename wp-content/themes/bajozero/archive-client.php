@@ -19,7 +19,6 @@
         </p>
 
     <?php endwhile; endif; ?>
-        <?php // echo wp_get_attachment_image(33, '', "", ["class" => "border"] ); ?>
 </div>
 
 <?php get_footer(); ?>

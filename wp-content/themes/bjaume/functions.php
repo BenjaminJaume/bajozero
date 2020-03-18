@@ -9,6 +9,9 @@ function load_stylesheet() {
 
     wp_register_style('fonts', get_template_directory_uri() . '/css/fonts.css', array(), 1, 'all');
     wp_enqueue_style('fonts');
+
+    wp_register_style('navbar', get_template_directory_uri() . '/css/navbar.css', array(), 1, 'all');
+    wp_enqueue_style('navbar');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheet');
 
@@ -75,5 +78,5 @@ function init_remove_support(){
 }
 
 // PICTURES SIZES
-add_image_size( 'navbar-logo', 32, 32, true );
+add_image_size( 'navbar-logo', 48, 48, true );
 ?>

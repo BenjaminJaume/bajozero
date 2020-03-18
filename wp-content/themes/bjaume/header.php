@@ -14,17 +14,13 @@
         <header class="sticky-top" role="banner">
             <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
                 <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand text-uppercase mx-auto" href="/bajozero" style="padding-left: 56px">
+                        <?php echo wp_get_attachment_image(33, 'navbar-logo', '', ["class" => "align-middle"]); ?>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    
-                    <a class="navbar-brand" href="#">
-                        <?php echo wp_get_attachment_image(33, 'navbar-logo'); ?>
-                        Bajo Zero
-                    </a>
-                        <p>
-                        </p>
 
                     <?php
                     wp_nav_menu( array(
@@ -32,8 +28,8 @@
                         'depth'             => 2,
                         'container'         => 'div',
                         'container_class'   => 'collapse navbar-collapse text-uppercase',
-                        'container_id'      => 'bs-example-navbar-collapse-1',
-                        'menu_class'        => 'nav navbar-nav',
+                        'container_id'      => 'navbar',
+                        'menu_class'        => 'nav navbar-nav mx-auto',
                         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                         'walker'            => new WP_Bootstrap_Navwalker(),
                     ) );
