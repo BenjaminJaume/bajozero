@@ -14,7 +14,7 @@
         <header class="sticky-top" role="banner">
             <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
                 <div class="container">
-                    <a class="navbar-brand text-uppercase mx-auto" href="/bajozero" style="padding-left: 56px">
+                    <a class="navbar-brand mx-auto" href="/bajozero" style="padding-left: 56px">
                         <?php echo wp_get_attachment_image(33, 'navbar-logo', '', ["class" => "align-middle"]); ?>
                     </a>
 
@@ -27,7 +27,7 @@
                         'theme_location'    => 'menu',
                         'depth'             => 2,
                         'container'         => 'div',
-                        'container_class'   => 'collapse navbar-collapse text-uppercase',
+                        'container_class'   => 'collapse navbar-collapse',
                         'container_id'      => 'navbar',
                         'menu_class'        => 'nav navbar-nav mx-auto',
                         'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',

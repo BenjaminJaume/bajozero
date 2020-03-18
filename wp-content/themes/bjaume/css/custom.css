@@ -15,7 +15,10 @@ Author: Benjamin Jaume
   --sand: #fbedc4;
   --salmon: #ff7b7b;
   --orange: #ea9114;
+
   --pink: #f05c7e;
+  --pink-0-75: rgba(240, 92, 126, 0.75);
+
   --cyan: #34b4a7;
 }
 
@@ -40,4 +43,13 @@ a {
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+footer {
+  background-color: var(--sand);
+}
+
+.attachment-logo-footer {
+  width: 128px;
+  height: 128px;
 }

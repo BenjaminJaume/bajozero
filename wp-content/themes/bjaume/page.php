@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="container-fluid py-5">
+<div class="container-fluid home-container py-5">
 <?php 
     if ( have_posts() ) {
         wp_reset_query();

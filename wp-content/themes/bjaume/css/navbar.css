@@ -11,7 +11,7 @@ Author: Benjamin Jaume
 .navbar-nav,
 .navbar-brand {
   font-size: 1.25rem;
-  font-weight: 100;
+  font-weight: 350;
 }
 
 .navbar-light .navbar-brand:focus,
@@ -39,7 +39,7 @@ Author: Benjamin Jaume
 
 .navbar-light .navbar-nav .nav-link:hover::after,
 .navbar-light .navbar-nav .active > .nav-link:after {
-  border-bottom: 2px solid var(--green-0-75);
+  border-bottom: 2px solid var(--pink);
   bottom: -2px;
   content: " ";
   left: 0;
@@ -51,5 +51,5 @@ Author: Benjamin Jaume
 }
 
 .navbar-light .navbar-nav .active > .nav-link:after {
-  border-bottom: 2px solid var(--green);
+  border-bottom: 2px solid var(--pink);
 }
