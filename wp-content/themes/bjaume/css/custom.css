@@ -33,7 +33,7 @@ Author: Benjamin Jaume
   --rainbow-purple: #9b59b6;
 
   --facebook: #4267b2;
-  --instagram: #c13584;
+  --instagram: #e1306c;
   --messenger: #00b2ff;
   --maps: #f4b400;
   --mail: #2ecc71;
@@ -72,37 +72,6 @@ a {
 .color-brand-filter {
   width: 100%;
   height: 100%;
-
-  /* background-color: var(--chocolate); */
-
-  /* background-image: linear-gradient(
-    to top,
-    var(--chocolate-0-75) 0%,
-    var(--chocolate-0-75) 100%
-  ); */
-}
-
-footer {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-      135deg,
-      var(--chocolate-0-75),
-      var(--chocolate-0-75) 39px,
-      var(--vanilla) 39px,
-      var(--vanilla) 40px
-    ),
-    repeating-linear-gradient(
-      45deg,
-      var(--chocolate-0-75),
-      var(--chocolate-0-75) 39px,
-      var(--vanilla) 39px,
-      var(--vanilla) 40px
-    );
-  background-size: 56.559999999999995px 56.559999999999995px;
 }
 
 /* Picture in footer */

@@ -1,5 +1,6 @@
 <?php wp_footer(); ?>
 
+<div class="footer-top"></div>
 <footer>
     <div class="color-brand-filter">
         <div class="container-fluid py-5 text-center">
@@ -38,7 +39,7 @@
                 </ul>
             </div>
 
-            <p class="text-vanilla text-uppercase">
+            <p class="text-vanilla text-uppercase copyright-footer">
                 &copy; Copyright 2020 Bajo Zero. All right reserved.
             </p>
         </div>

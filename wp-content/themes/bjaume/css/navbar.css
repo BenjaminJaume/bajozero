@@ -61,3 +61,7 @@ Author: Benjamin Jaume
 .navbar-light .navbar-toggler {
   border-color: transparent;
 }
+
+.navbar {
+  border-bottom: 2px solid var(--chocolate-0-75);
+}

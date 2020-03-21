@@ -1,3 +1,16 @@
+.footer-top {
+  height: 50px;
+  background-image: url("../pictures/ice-cream.jpg");
+  background-position: center;
+  /* background-size: cover; */
+  border-top: 2px solid var(--vanilla);
+  border-bottom: 2px solid var(--chocolate-0-75);
+}
+
+footer {
+  background-color: var(--chocolate);
+}
+
 .social-media-icon {
   list-style-type: none;
   display: inline-flex;
@@ -41,4 +54,8 @@
 
 .mail-icon:hover {
   color: var(--mail);
+}
+
+.copyright-footer {
+  text-shadow: 2px 2px black;
 }
