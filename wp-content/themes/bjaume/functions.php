@@ -15,6 +15,9 @@ function load_stylesheet() {
 
     wp_register_style('navbar', get_template_directory_uri() . '/css/navbar.css', array(), 1, 'all');
     wp_enqueue_style('navbar');
+
+    wp_register_style('footer', get_template_directory_uri() . '/css/footer.css', array(), 1, 'all');
+    wp_enqueue_style('footer');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheet');
 
@@ -85,4 +88,3 @@ function init_remove_support(){
 
 // PICTURES SIZES
 add_image_size( 'navbar-logo', 48, 48, true );
-?>

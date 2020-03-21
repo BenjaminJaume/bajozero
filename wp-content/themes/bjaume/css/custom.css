@@ -26,6 +26,18 @@ Author: Benjamin Jaume
   --chocolate: #7b3f00;
   --chocolate-0-75: rgb(123, 63, 0, 0.75);
 
+  --rainbow-red: #e74c3c;
+  --rainbow-yellow: #f1c40f;
+  --rainbow-green: #2ecc71;
+  --rainbow-blue: #3498db;
+  --rainbow-purple: #9b59b6;
+
+  --facebook: #4267b2;
+  --instagram: #c13584;
+  --messenger: #00b2ff;
+  --maps: #f4b400;
+  --mail: #2ecc71;
+
   --black-0-75: rgba(0, 0, 0, 0.75);
 }
 
@@ -56,24 +68,41 @@ a {
   transition: all 300ms ease-in-out;
 }
 
-/* footer {
-  /* background-image: url("../pictures/background.jpg"); 
-  /* background-repeat: repeat; 
-  /* background-size: cover; 
-} */
-
 /* BACKGROUND COLORS */
 .color-brand-filter {
   width: 100%;
   height: 100%;
 
-  background-color: var(--chocolate);
+  /* background-color: var(--chocolate); */
 
   /* background-image: linear-gradient(
     to top,
-    var(--chocolate) 0%,
+    var(--chocolate-0-75) 0%,
     var(--chocolate-0-75) 100%
   ); */
+}
+
+footer {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+      135deg,
+      var(--chocolate-0-75),
+      var(--chocolate-0-75) 39px,
+      var(--vanilla) 39px,
+      var(--vanilla) 40px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      var(--chocolate-0-75),
+      var(--chocolate-0-75) 39px,
+      var(--vanilla) 39px,
+      var(--vanilla) 40px
+    );
+  background-size: 56.559999999999995px 56.559999999999995px;
 }
 
 /* Picture in footer */
