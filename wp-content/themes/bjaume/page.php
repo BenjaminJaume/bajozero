@@ -1,4 +1,4 @@
-<!-- Page template -->
+<!-- Page -->
 
 <?php get_header(); ?>
 

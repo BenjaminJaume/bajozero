@@ -3,7 +3,7 @@
     <head>
         <?php wp_head(); ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+        
         
         <?php global $template; console(basename($template)); ?>
 
@@ -14,7 +14,7 @@
         <header class="sticky-top" role="banner">
             <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
                 <div class="container">
-                    <a class="navbar-brand mx-auto" href="/bajozero" style="padding-left: 56px">
+                    <a class="navbar-brand mx-auto" href=<?php bloginfo( 'url' ); ?> style="padding-left: 56px">
                         <?php echo wp_get_attachment_image(33, 'navbar-logo', '', ["class" => "align-middle"]); ?>
                     </a>
 

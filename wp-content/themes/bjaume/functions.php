@@ -29,6 +29,9 @@ function load_javascript() {
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', '', '4.3.1', true);
     wp_enqueue_script('bootstrap');
 
+    wp_register_script('axios', "https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js", '', '0.19.2', true);
+    wp_enqueue_script('axios');
+
     wp_register_script('custom_script', get_template_directory_uri() . '/js/custom.js', '', false, true);
     wp_enqueue_script('custom_script');
 }
