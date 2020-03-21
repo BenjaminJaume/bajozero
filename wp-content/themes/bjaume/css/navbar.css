@@ -8,10 +8,14 @@ Author: Benjamin Jaume
 
 */
 
+.bg-light {
+  background-color: var(--vanilla) !important;
+}
+
 .navbar-nav,
 .navbar-brand {
   font-size: 1.25rem;
-  font-weight: 350;
+  /* font-weight: 350; */
 }
 
 .navbar-light .navbar-brand:focus,
@@ -52,4 +56,8 @@ Author: Benjamin Jaume
 
 .navbar-light .navbar-nav .active > .nav-link:after {
   border-bottom: 2px solid var(--pink);
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
 }

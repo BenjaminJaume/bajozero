@@ -7,24 +7,45 @@
             <p>
                 <?php echo wp_get_attachment_image(33, 'logo-footer', ''); ?>
             </p>
-            <p>
-                <p>
-                    <i class="fas fa-dice-six"></i> <!-- uses regular style -->
+            <p class="text-vanilla">
+                <a href="https://www.facebook.com/BajoZeroCostaRica/" alt="" target="_blank" class="social-media-icon">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+
+                |
+
+                <a href="https://g.page/BajoZeroCostaRica" alt="" target="_blank" class="social-media-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </a>
+
+                |
+
+                <a href="https://www.instagram.com/heladeria_bajozero/" alt="" target="_blank" class="social-media-icon">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+
+                |
+
+                <a href="https://m.me/BajoZeroCostaRica" alt="" target="_blank" class="social-media-icon">
+                    <i class="fab fa-facebook-messenger"></i>
+                </a>
+
+                |
+
+                <a href="mailto:heladeriabajozerocr@gmail.com" alt="" target="_blank" class="social-media-icon">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
             </p>
-            
-            <p>
-                <i class="fas fa-ice-cream"></i>
+
+            <p class="text-uppercase text-vanilla">
+                &copy; Copyright 2020 Bajo Zero. All right reserved.
             </p>
-            <p>
-                
-                <i class="fab fa-github-square"></i> <!-- uses brands style -->
-            </p>
-        </p>
-    </div>
+        </div>
 
     </div>
-    </footer>
+</footer>
 
 
 </body>
+
 </html>

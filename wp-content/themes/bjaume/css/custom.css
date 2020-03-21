@@ -12,8 +12,8 @@ Author: Benjamin Jaume
   --green: #05be9b;
   --green-0-75: rgba(5, 190, 155, 0.75);
 
-  --sand: #fbedc4;
-  --sand-0-75: rgba(251, 237, 196, 0.75);
+  --vanilla: #fbedc4;
+  --vanilla-0-75: rgba(251, 237, 196, 0.75);
 
   --salmon: #ff7b7b;
   --orange: #ea9114;
@@ -23,7 +23,15 @@ Author: Benjamin Jaume
 
   --cyan: #34b4a7;
 
+  --chocolate: #7b3f00;
+  --chocolate-0-75: rgb(123, 63, 0, 0.75);
+
   --black-0-75: rgba(0, 0, 0, 0.75);
+}
+
+/* COLORS*/
+.text-vanilla {
+  color: var(--vanilla);
 }
 
 html {
@@ -31,12 +39,11 @@ html {
 }
 
 body {
-  background-image: linear-gradient(
+  background: linear-gradient(
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 0.75)
     ),
-    url("../pictures/background.jpg");
-  background-repeat: repeat;
+    url("../pictures/background.jpg") repeat;
   font-family: "Quicksand", Calibri, "Trebuchet MS", sans-serif, cursive;
 
   -webkit-font-smoothing: antialiased;
@@ -49,25 +56,35 @@ a {
   transition: all 300ms ease-in-out;
 }
 
-footer {
-  background-image: url("../pictures/background.jpg");
-  background-repeat: repeat;
-  /* background-size: cover; */
-}
+/* footer {
+  /* background-image: url("../pictures/background.jpg"); 
+  /* background-repeat: repeat; 
+  /* background-size: cover; 
+} */
 
 /* BACKGROUND COLORS */
 .color-brand-filter {
   width: 100%;
   height: 100%;
 
-  background-image: linear-gradient(
+  background-color: var(--chocolate);
+
+  /* background-image: linear-gradient(
     to top,
-    var(--sand-0-75) 0%,
-    var(--sand-0-75) 100%
-  );
+    var(--chocolate) 0%,
+    var(--chocolate-0-75) 100%
+  ); */
 }
 
+/* Picture in footer */
 .attachment-logo-footer {
   width: 128px;
   height: 128px;
+}
+
+.img-front {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
