@@ -1,0 +1,77 @@
+[class*="carousel-caption-color-"] h3 {
+  text-shadow: 2px 2px black;
+}
+
+[class*="carousel-caption-color-"] p {
+  line-height: 1.3;
+}
+
+[class*="carousel-caption-color-"] span {
+  padding: 1px 10px;
+}
+
+.carousel-caption-color-1 span {
+  background-color: var(--chocolate);
+}
+
+.carousel-caption-color-2 span {
+  background-color: var(--green);
+}
+
+.carousel-caption-color-3 span {
+  background-color: var(--pink);
+}
+
+.carousel-item {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item-1 {
+  background-image: url("../pictures/8.jpg");
+}
+.carousel-item-2 {
+  background-image: url("../pictures/7.jpg");
+}
+.carousel-item-3 {
+  background-image: url("../pictures/11.jpg");
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575px) {
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Column management */
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .carousel-container {
+    width: 75vw;
+  }
+}
+
+/* Column management */
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Column management */
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -55,7 +55,3 @@ footer {
 .mail-icon:hover {
   color: var(--mail);
 }
-
-.copyright-footer {
-  text-shadow: 2px 2px black;
-}
