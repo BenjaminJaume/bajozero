@@ -6,22 +6,18 @@
 
     <div class="container-fluid top-container-front-page py-5">
         <div class="animated fadeInRight text-center ">
-            <h1 class="text-green text-uppercase font-impact my-0">
+            <h1 class="display-3 text-green text-uppercase font-impact my-0">
                 Bajo Zero
             </h1>
-            <h3 class="text-pink font-yellowtail mb-0">
+            <h3 class="h1 text-pink font-yellowtail mb-0">
                 Heladeria a la plancha
             </h3>
-            <p class="text-chocolate">Liberia, Costa Rica</p>
+            <h5 class="text-chocolate font-weight-bold mb-4">Liberia, Costa Rica</h5>
         </div>
 
         <div class="animated fadeInLeft text-center mb-5">
-            <a href="/bajozero/contact/" class="btn btn-vanilla rounded hvr-sweep-to-top mr-4" alt="">
+            <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-sweep-to-top" alt="">
                 Contact us
-            </a>
-
-            <a href="https://www.facebook.com/BajoZeroCostaRica/" class="btn btn-facebook rounded hvr-sweep-to-bottom" alt="">
-                Follow us on Facebook
             </a>
         </div>
 
@@ -64,8 +60,8 @@
         </div>
     </div>
 
-    <div class="container my-5">
-        <div class="row featurette">
+    <div class="container-fluid">
+        <div class="row featurette py-5 px-md-5">
             <div class="col-md-7">
                 <h2 class="featurette-heading">This is our team. <span class="text-pink">And we are here for you</span></h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -75,9 +71,7 @@
             </div>
         </div>
 
-        <hr class="featurette-divider mx-auto">
-
-        <div class="row featurette">
+        <div class="row featurette py-5 px-md-5">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Oh yeah, it’s good. <span class="text-orange">Latest flavor: caramel & vanilla.</span></h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -88,9 +82,7 @@
             </div>
         </div>
 
-        <hr class="featurette-divider mx-auto">
-
-        <div class="row featurette">
+        <div class="row featurette py-5 px-md-5">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Come and discover our venue. <span class="text-green">We are located <a href="/bajozero/our-shop/" alt="" class="link-green link-decoration">here</a></span></h2>
                 <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -99,12 +91,10 @@
                 <img src=<?php echo wp_get_attachment_url(36) ?> class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
             </div>
         </div>
-
-        <hr class="featurette-divider mx-auto">
     </div>
 
-    <div class="container">
-        <div class="card-deck mb-3 text-center">
+    <div class="container mt-5">
+        <div class="card-deck card-deck-front-page mb-3 text-center">
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">🍦 Ice cream mix</h4>
@@ -125,7 +115,7 @@
                         </ul>
                     </div>
                     <h1 class="card-title pricing-card-title">&#36;3 (&#8353;1500)</h1>
-                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla hvr-sweep-to-bottom">Try it</a>
+                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-sweep-to-bottom">Try it</a>
                 </div>
             </div>
             <div class="card mb-4 shadow-sm">
@@ -148,7 +138,7 @@
                         </ul>
                     </div>
                     <h1 class="card-title pricing-card-title">&#36;6 (&#8353;3000)</h1>
-                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla hvr-sweep-to-bottom">Try it</a>
+                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-sweep-to-bottom">Try it</a>
                 </div>
             </div>
             <div class="card mb-4 shadow-sm">
@@ -170,7 +160,7 @@
                         </ul>
                     </div>
                     <h1 class="card-title pricing-card-title">&#36;10 (&#8353;5000)</h1>
-                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla hvr-sweep-to-bottom">Try it</a>
+                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-sweep-to-bottom">Try it</a>
                 </div>
             </div>
         </div>

@@ -46,6 +46,8 @@ Author: Benjamin Jaume
   --black-0-75: rgba(0, 0, 0, 0.75);
 
   --white: #fff;
+  --transparent: rgba(255, 255, 255, 0.01);
+  --white-0-75: rgba(255, 255, 255, 1);
 }
 
 html {
@@ -144,12 +146,6 @@ body {
   font-family: "Yellowtail";
 }
 
-/* BACKGROUND COLORS */
-.color-brand-filter {
-  width: 100%;
-  height: 100%;
-}
-
 /* CUSTOM BUTTONS */
 
 .btn-vanilla {
@@ -199,6 +195,27 @@ body {
   background: var(--vanilla);
 }
 
+/* Featurettes
+------------------------- */
+
+.featurette:nth-child(even),
+.featurette:nth-child(even) .featurette-heading {
+  background-color: var(--vanilla);
+  color: var(--chocolate);
+}
+
+.featurette:nth-child(odd),
+.featurette:nth-child(odd) .featurette-heading {
+  background-color: var(--chocolate);
+  color: var(--vanilla);
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
 /* OTHER */
 
 /* Picture in footer */
@@ -215,20 +232,9 @@ body {
   text-shadow: 2px 2px black;
 }
 
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  background-color: var(--chocolate-0-75);
-  max-width: 75vw;
-}
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
-  color: var(--chocolate);
+.card-deck-front-page .card-header {
+  color: var(--vanilla);
+  background-color: var(--green);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
