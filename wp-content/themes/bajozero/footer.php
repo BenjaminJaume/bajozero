@@ -1,4 +1,3 @@
-
 <div class="footer-top">
     <div class="color-filter">
     </div>
@@ -8,7 +7,7 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="mb-3">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png'?>" class="logo-footer" alt="">
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" class="logo-footer" alt="">
                 </div>
                 <span class="text-vanilla text-uppercase text-shadow">
                     &copy; Copyright 2020 Bajo Zero. All right reserved.
@@ -55,7 +54,6 @@
 </main>
 
 <?php wp_footer(); ?>
-
 
 </body>
 

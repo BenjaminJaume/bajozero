@@ -216,6 +216,22 @@ body {
   letter-spacing: -0.05rem;
 }
 
+.card {
+  border-radius: 0;
+}
+
+.card-deck-front-page .card-header {
+  border-radius: 0;
+}
+
+.shadow-picture-lg {
+  box-shadow: 5px 5px var(--black);
+}
+
+.shadow-picture-sm {
+  box-shadow: 2px 2px var(--black);
+}
+
 /* OTHER */
 
 /* Picture in footer */

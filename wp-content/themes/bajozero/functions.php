@@ -20,6 +20,9 @@ function load_stylesheet()
     wp_register_style('hover-min', get_template_directory_uri() . '/css/vendor/hover-min.css', array(), false, 'all');
     wp_enqueue_style('hover-min');
 
+    wp_register_style('aos', get_template_directory_uri() . '/css/vendor/aos.css', array(), '2.3.1', 'all');
+    wp_enqueue_style('aos');
+
     wp_register_style('custom_stylesheet', get_template_directory_uri() . '/css/custom.css', array(), 1, 'all');
     wp_enqueue_style('custom_stylesheet');
 
@@ -50,7 +53,10 @@ function load_javascript()
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', '', '4.3.1', true);
     wp_enqueue_script('bootstrap');
 
-    wp_register_script('axios', "https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js", '', '0.19.2', true);
+    wp_register_script('aos', get_template_directory_uri() . '/js/vendor/aos.js', '', '2.3.1', true);
+    wp_enqueue_script('aos');
+
+    wp_register_script('axios', get_template_directory_uri() . '/js/vendor/axios.min.js', '', '0.19.2', true);
     wp_enqueue_script('axios');
 
     wp_register_script('custom_script', get_template_directory_uri() . '/js/custom.js', '', false, true);
@@ -80,31 +86,31 @@ function console($data)
 }
 
 // Custom post type function
-function create_posttype()
-{
+// function create_posttype()
+// {
 
-    register_post_type(
-        'client',
-        // CPT Options
-        array(
-            'labels' => array(
-                'name' => __('Clients'),
-                'singular_name' => __('client')
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'clients'),
-            'show_in_rest' => true
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action('init', 'create_posttype');
+//     register_post_type(
+//         'client',
+//         // CPT Options
+//         array(
+//             'labels' => array(
+//                 'name' => __('Clients'),
+//                 'singular_name' => __('client')
+//             ),
+//             'public' => true,
+//             'has_archive' => true,
+//             'rewrite' => array('slug' => 'clients'),
+//             'show_in_rest' => true
+//         )
+//     );
+// }
+// // Hooking up our function to theme setup
+// add_action('init', 'create_posttype');
 
-// turn off wysiwig for custom post types
-add_action('init', 'init_remove_support', 100);
-function init_remove_support()
-{
-    remove_post_type_support('client', 'editor');
-    // remove_post_type_support( $post_type, 'editor');
-}
+// // turn off wysiwig for custom post types
+// add_action('init', 'init_remove_support', 100);
+// function init_remove_support()
+// {
+//     remove_post_type_support('client', 'editor');
+//     // remove_post_type_support( $post_type, 'editor');
+// }
