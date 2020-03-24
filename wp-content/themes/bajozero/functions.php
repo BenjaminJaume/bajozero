@@ -1,179 +1,95 @@
 <?php
-/**
- * bajozero functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package bajozero
- */
 
-if ( ! function_exists( 'bajozero_setup' ) ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 */
-	function bajozero_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on bajozero, use a find and replace
-		 * to change 'bajozero' to the name of your theme in all the template files.
-		 */
-		load_theme_textdomain( 'bajozero', get_template_directory() . '/languages' );
+function load_stylesheet()
+{
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap.min.css', array(), false, 'all');
+    wp_enqueue_style('bootstrap');
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+    wp_register_style('bootstrap-rfs', get_template_directory_uri() . '/css/vendor/bootstrap-rfs.css', array(), false, 'all');
+    wp_enqueue_style('bootstrap-rfs');
 
-		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
-		 */
-		add_theme_support( 'title-tag' );
+    wp_register_style('fontawesome', get_template_directory_uri() . '/css/vendor/fontawesome/css/all.min.css', array(), false, 'all');
+    wp_enqueue_style('fontawesome');
 
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
-		add_theme_support( 'post-thumbnails' );
+    wp_register_style('animate', get_template_directory_uri() . '/css/vendor/animate.css', array(), false, 'all');
+    wp_enqueue_style('animate');
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'bajozero' ),
-		) );
+    wp_register_style('normalize', get_template_directory_uri() . '/css/vendor/normalize.css', array(), false, 'all');
+    wp_enqueue_style('normalize');
 
-		/*
-		 * Switch default core markup for search form, comment form, and comments
-		 * to output valid HTML5.
-		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+    wp_register_style('hover-min', get_template_directory_uri() . '/css/vendor/hover-min.css', array(), false, 'all');
+    wp_enqueue_style('hover-min');
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'bajozero_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+    wp_register_style('custom_stylesheet', get_template_directory_uri() . '/css/custom.css', array(), 1, 'all');
+    wp_enqueue_style('custom_stylesheet');
 
-		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+    wp_register_style('fonts', get_template_directory_uri() . '/css/fonts.css', array(), false, 'all');
+    wp_enqueue_style('fonts');
 
-		/**
-		 * Add support for core custom logo.
-		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
-		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
-	}
-endif;
-add_action( 'after_setup_theme', 'bajozero_setup' );
+    wp_register_style('navbar', get_template_directory_uri() . '/css/navbar.css', array(), false, 'all');
+    wp_enqueue_style('navbar');
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function bajozero_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'bajozero_content_width', 640 );
+    wp_register_style('footer', get_template_directory_uri() . '/css/footer.css', array(), false, 'all');
+    wp_enqueue_style('footer');
+
+    wp_register_style('carousel', get_template_directory_uri() . '/css/carousel.css', array(), false, 'all');
+    wp_enqueue_style('carousel');
 }
-add_action( 'after_setup_theme', 'bajozero_content_width', 0 );
+add_action('wp_enqueue_scripts', 'load_stylesheet');
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function bajozero_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'bajozero' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'bajozero' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+function load_jquery()
+{
+    wp_deregister_script('jquery');
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/js/vendor/jquery-3.4.1.min.js', '', '3.4.1', true);
 }
-add_action( 'widgets_init', 'bajozero_widgets_init' );
+add_action('wp_enqueue_scripts', 'load_jquery');
 
-/**
- * Enqueue scripts and styles.
- */
-function bajozero_scripts() {
-	wp_enqueue_style( 'bajozero-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'bajozero-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+function load_javascript()
+{
+    wp_register_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', '', '4.3.1', true);
+    wp_enqueue_script('bootstrap');
 
-	wp_enqueue_script( 'bajozero-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    wp_register_script('axios', "https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js", '', '0.19.2', true);
+    wp_enqueue_script('axios');
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    wp_register_script('custom_script', get_template_directory_uri() . '/js/custom.js', '', false, true);
+    wp_enqueue_script('custom_script');
 }
-add_action( 'wp_enqueue_scripts', 'bajozero_scripts' );
+add_action('wp_enqueue_scripts', 'load_javascript');
 
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
+// Add menu feature in WordPress
+add_theme_support('menus');
 
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+// Add Boostrap Menu file with Wordpress
+function register_navwalker()
+{
+    require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
+add_action('after_setup_theme', 'register_navwalker');
 
-// CUSTOMED BY BENJAMIN JAUME
+register_nav_menus(
+    array(
+        'menu' => __("Menu", 'theme')
+    )
+);
 
-function console($data) {
+function console($data)
+{
     echo "<script>console.log('" . json_encode($data) . "');</script>";
 }
 
 // Custom post type function
-function create_posttype() {
- 
-    register_post_type( 'client',
-    // CPT Options
+function create_posttype()
+{
+
+    register_post_type(
+        'client',
+        // CPT Options
         array(
             'labels' => array(
-                'name' => __( 'Clients' ),
-                'singular_name' => __( 'client' )
+                'name' => __('Clients'),
+                'singular_name' => __('client')
             ),
             'public' => true,
             'has_archive' => true,
@@ -186,8 +102,9 @@ function create_posttype() {
 add_action('init', 'create_posttype');
 
 // turn off wysiwig for custom post types
-add_action('init', 'init_remove_support',100);
-function init_remove_support(){
-    remove_post_type_support( 'client', 'editor');
+add_action('init', 'init_remove_support', 100);
+function init_remove_support()
+{
+    remove_post_type_support('client', 'editor');
     // remove_post_type_support( $post_type, 'editor');
 }

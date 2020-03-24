@@ -10,7 +10,7 @@
                 Bajo Zero
             </h1>
             <h3 class="h1 text-pink font-yellowtail mb-0">
-                Heladeria a la plancha
+                Helados a la plancha
             </h3>
             <h5 class="text-chocolate font-weight-bold mb-4">Liberia, Costa Rica</h5>
         </div>
@@ -67,7 +67,7 @@
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="col-md-5">
-                <img src=<?php echo wp_get_attachment_url(103) ?> class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
+                <img src="<?php echo content_url() . '/themes/bajozero/pictures/team.jpg'?>" class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
             </div>
         </div>
 
@@ -77,8 +77,7 @@
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img src=<?php echo wp_get_attachment_url(39) ?> class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
-
+                <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg'?>" class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
             </div>
         </div>
 
@@ -88,7 +87,7 @@
                 <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-md-5">
-                <img src=<?php echo wp_get_attachment_url(36) ?> class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
+                <img src="<?php echo content_url() . '/themes/bajozero/pictures/3.jpg'?>" class="rounded featurette-image img-fluid mx-auto" alt="" width="500" height="500">
             </div>
         </div>
     </div>
@@ -101,7 +100,7 @@
                 </div>
                 <div class="card-body">
                     <a href="/bajozero/flavors/" alt="">
-                        <img src=<?php echo wp_get_attachment_url(39) ?> class="rounded img-fluid" alt="" width="500" height="500">
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg'?>" class="rounded img-fluid" alt="" width="500" height="500">
                     </a>
 
                     <div class="my-4">
@@ -124,7 +123,7 @@
                 </div>
                 <div class="card-body">
                     <a href="/bajozero/flavors/" alt="">
-                        <img src=<?php echo wp_get_attachment_url(34) ?> class="rounded img-fluid" alt="" width="500" height="500">
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/1.jpg'?>" class="rounded img-fluid" alt="" width="500" height="500">
                     </a>
 
                     <div class="my-4">
@@ -147,7 +146,7 @@
                 </div>
                 <div class="card-body">
                     <a href="/bajozero/flavors/" alt="">
-                        <img src=<?php echo wp_get_attachment_url(41) ?> class="rounded img-fluid" alt="" width="500" height="500">
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/8.jpg'?>" class="rounded img-fluid" alt="" width="500" height="500">
                     </a>
 
                     <div class="my-4">

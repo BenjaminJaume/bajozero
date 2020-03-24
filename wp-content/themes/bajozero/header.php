@@ -1,58 +1,40 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package bajozero
- */
+<!DOCTYPE html>
+<html>
 
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<?php wp_head(); ?>
+    <?php global $template;
+    console(basename($template)); ?>
+
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bajozero' ); ?></a>
+<body>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$bajozero_description = get_bloginfo( 'description', 'display' );
-			if ( $bajozero_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $bajozero_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+    <header class="sticky-top" role="banner">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+            <div class="container">
+                <a class="navbar-brand mx-auto" href=<?php bloginfo('url'); ?> style="padding-left: 56px">
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png'?>" alt="" class="align-middle navbar-logo" />
+                </a>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bajozero' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-	<div id="content" class="site-content">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location'    => 'menu',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'navbar',
+                    'menu_class'        => 'nav navbar-nav mx-auto',
+                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker'            => new WP_Bootstrap_Navwalker(),
+                ));
+                ?>
+            </div>
+        </nav>
+    </header>

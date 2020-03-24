@@ -12,6 +12,11 @@ Author: Benjamin Jaume
   background-color: var(--vanilla) !important;
 }
 
+.navbar-logo {
+  height: 48px;
+  width: 48px;
+}
+
 .navbar a {
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
