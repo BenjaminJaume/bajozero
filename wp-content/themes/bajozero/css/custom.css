@@ -61,7 +61,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.top-container-front-page {
+.background-container {
   background: linear-gradient(
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 0.75)
@@ -251,6 +251,15 @@ body {
 .card-deck-front-page .card-header {
   color: var(--vanilla);
   background-color: var(--green);
+}
+
+.img-quote {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.content-post {
+  font-size: 1.25rem;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

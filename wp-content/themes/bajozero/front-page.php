@@ -3,67 +3,69 @@
 <?php get_header(); ?>
 
 <main role="main">
-    <div class="container-fluid top-container-front-page py-5">
-        <div class="row">
-            <div class="col-12 col-md-6 align-self-center">
-                <div class="animated fadeInLeft text-center">
-                    <h1 class="display-3 text-green text-uppercase font-impact my-0">
-                        Bajo Zero
-                    </h1>
-                    <h3 class="h1 text-pink font-yellowtail mb-0">
-                        Helados a la plancha
-                    </h3>
-                    <h5 class="text-chocolate font-weight-bold mb-4">Liberia, Costa Rica</h5>
-                </div>
-
-                <div class="animated fadeInRight font-italic font-weight-bold text-center mb-4">
-                    The story started in 2007, and we will keep<br />
-                    offering you delicious homemade customed rolled ice cream!<br /><br />
-                    We are here to listen to what is the<br />
-                    best treat that will fits you <i class="fas fa-heart"></i>
-                </div>
-
-                <div class="animated fadeInLeft text-center mb-5">
-                    <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-sweep-to-top" alt="">
-                        Contact us
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div id="carousel" class="carousel slide animated fadeIn slow" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner rounded">
-                        <div class="carousel-item carousel-item-1 active" data-interval="10000">
-                            <div class="carousel-caption d-sm-block carousel-caption-color-1 text-vanilla">
-                                <h3 class="text-uppercase mb-1"><span>Discover our fresh products</span></h3>
-                                <p><span>Have a look at our <a href="/bajozero/flavors/" alt="" class="link-green">flavors page</a> to find the ice cream that fits you perfectly</span></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item carousel-item-2" data-interval="10000">
-                            <div class="carousel-caption d-sm-block carousel-caption-color-2 text-vanilla">
-                                <h3 class="text-uppercase mb-1"><span>Follow us on social medias</span></h3>
-                                <p><span>Don't miss any last minute promotions and events at <a href="/bajozero/our-shop/" alt="" class="link-chocolate">our shop</a></span></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item carousel-item-3" data-interval="10000">
-                            <div class="carousel-caption d-sm-block carousel-caption-color-3 text-vanilla">
-                                <h3 class="text-uppercase mb-1"><span>Come and visit us</span></h3>
-                                <p><span>We have a spacious venue with a backyard where you can have fun with your friends!</span></p>
-                            </div>
-                        </div>
+    <div class="background-container">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="animated fadeInLeft text-center">
+                        <h1 class="display-3 text-green text-uppercase font-impact my-0">
+                            Bajo Zero
+                        </h1>
+                        <h3 class="h1 text-pink font-yellowtail mb-0">
+                            Helados a la plancha
+                        </h3>
+                        <h5 class="text-chocolate font-weight-bold mb-4">Liberia, Costa Rica</h5>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+
+                    <div class="animated fadeInRight font-italic font-weight-bold text-center mb-4">
+                        The story started in 2007, and we will keep<br />
+                        offering you delicious homemade customed rolled ice cream!<br /><br />
+                        We are here to listen to what is the<br />
+                        best treat that will fits you <i class="fas fa-heart"></i>
+                    </div>
+
+                    <div class="animated fadeInLeft text-center mb-5">
+                        <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-sweep-to-top" alt="">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="carousel" class="carousel slide animated fadeIn slow" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item carousel-item-1 active" data-interval="10000">
+                                <div class="carousel-caption d-sm-block carousel-caption-color-1 text-vanilla">
+                                    <h3 class="text-uppercase mb-1"><span>Discover our fresh products</span></h3>
+                                    <p><span>Have a look at our <a href="/bajozero/flavors/" alt="" class="link-green">flavors page</a> to find the ice cream that fits you perfectly</span></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-2" data-interval="10000">
+                                <div class="carousel-caption d-sm-block carousel-caption-color-2 text-vanilla">
+                                    <h3 class="text-uppercase mb-1"><span>Follow us on social medias</span></h3>
+                                    <p><span>Don't miss any last minute promotions and events at <a href="/bajozero/our-shop/" alt="" class="link-chocolate">our shop</a></span></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-3" data-interval="10000">
+                                <div class="carousel-caption d-sm-block carousel-caption-color-3 text-vanilla">
+                                    <h3 class="text-uppercase mb-1"><span>Come and visit us</span></h3>
+                                    <p><span>We have a spacious venue with a backyard where you can have fun with your friends!</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

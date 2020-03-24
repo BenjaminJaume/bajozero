@@ -2,7 +2,7 @@
     <div class="color-filter">
     </div>
 </div>
-<footer>
+<footer class="footer">
     <div class="container-fluid py-5 text-center">
         <div class="row">
             <div class="col-12 col-md-6">
