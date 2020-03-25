@@ -129,7 +129,7 @@
                             <span class="h2 mr-0 mr-md-1">&#8353;1500</span>
                             <span class="text-muted">(&#36;3)</span>
                         </div>
-                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-sweep-to-bottom">Try it</a>
+                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                             <span class="h2 mr-0 mr-md-1">&#8353;3000</span>
                             <span class="text-muted">(&#36;6)</span>
                         </div>
-                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-sweep-to-bottom">Try it</a>
+                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@
                             <span class="h2 mr-0 mr-md-1">&#8353;5000</span>
                             <span class="text-muted">(&#36;10)</span>
                         </div>
-                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-sweep-to-bottom">Try it</a>
+                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
                     </div>
                 </div>
             </div>
