@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="animated fadeInLeft text-center mb-5">
-                        <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-sweep-to-top" alt="">
+                        <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-underline-from-center" alt="">
                             Contact us
                         </a>
                     </div>

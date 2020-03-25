@@ -56,6 +56,9 @@ function load_javascript()
     wp_register_script('aos', get_template_directory_uri() . '/js/vendor/aos.js', '', '2.3.1', true);
     wp_enqueue_script('aos');
 
+    wp_register_script('jquery-visible', get_template_directory_uri() . '/js/vendor/jquery.visible.min.js', '', false, true);
+    wp_enqueue_script('jquery-visible');
+
     wp_register_script('axios', get_template_directory_uri() . '/js/vendor/axios.min.js', '', '0.19.2', true);
     wp_enqueue_script('axios');
 
@@ -66,6 +69,9 @@ add_action('wp_enqueue_scripts', 'load_javascript');
 
 // Add menu feature in WordPress
 add_theme_support('menus');
+
+// Add thumbnail feature in Wordpress
+add_theme_support('post-thumbnails');
 
 // Add Boostrap Menu file with Wordpress
 function register_navwalker()

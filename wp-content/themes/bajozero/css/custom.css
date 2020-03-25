@@ -9,14 +9,14 @@ Author: Benjamin Jaume
 */
 
 :root {
-  --green: #05be9b;
-  --green-0-75: rgba(5, 190, 155, 0.75);
-
   --vanilla: #fbedc4;
   --vanilla-0-75: rgba(251, 237, 196, 0.75);
 
   --chocolate: #7b3f00;
   --chocolate-0-75: rgb(123, 63, 0, 0.75);
+
+  --green: #05be9b;
+  --green-0-75: rgba(5, 190, 155, 0.75);
 
   --salmon: #ff7b7b;
   --salmon-0-75: rgba(255, 123, 123, 0.75);
@@ -59,14 +59,6 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.background-container {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("../pictures/background.jpg") repeat;
 }
 
 /* COLORS*/
@@ -155,14 +147,14 @@ body {
 }
 
 .btn-vanilla:hover {
-  color: var(--vanilla);
+  color: var(--green);
 }
 
 .btn-vanilla.hvr-sweep-to-top:before {
   background: var(--chocolate);
 }
 
-.btn-vanilla.hvr-sweep-to-bottom:before {
+.btn-vanilla.hvr-underline-from-center:before {
   background: var(--chocolate);
 }
 
@@ -176,7 +168,7 @@ body {
   border-color: var(--facebook-dark);
 }
 
-.btn-facebook.hvr-sweep-to-bottom:before {
+.btn-facebook.hvr-underline-from-center:before {
   background: var(--facebook-dark);
 }
 
@@ -191,8 +183,31 @@ body {
   border-color: var(--vanilla);
 }
 
-.btn-chocolate.hvr-sweep-to-bottom:before {
+.btn-chocolate.hvr-underline-from-center:before {
   background: var(--vanilla);
+}
+
+/* BACKGROUNDS */
+
+.background-container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("../pictures/background.jpg") repeat;
+}
+
+.background-container-0-100 {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)),
+    url("../pictures/background.jpg") repeat;
+}
+
+.bg-vanilla {
+  background-color: var(--vanilla);
+}
+
+.bg-chocolate {
+  background-color: var(--chocolate);
 }
 
 /* Featurettes
@@ -216,20 +231,41 @@ body {
   letter-spacing: -0.05rem;
 }
 
-.card {
-  border-radius: 0;
-}
+/* CARD DECK FRONT PAGE */
 
 .card-deck-front-page .card-header {
   border-radius: 0;
 }
 
-.shadow-picture-lg {
-  box-shadow: 5px 5px var(--black);
+.card-deck-front-page .card-header {
+  color: var(--vanilla);
+  background-color: var(--green);
 }
 
-.shadow-picture-sm {
-  box-shadow: 2px 2px var(--black);
+/* CARD DECK BLOG PAGE */
+.card-deck-blog-page .card-img-top,
+.card-deck-blog-page .card-header {
+  border-radius: 0;
+}
+
+.card-deck-blog-page .card {
+  margin: 0 0.1rem 0.2rem;
+  border-radius: 0;
+}
+
+/* SLIDE IN BLOG POSTS */
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
 }
 
 /* OTHER */
@@ -248,18 +284,26 @@ body {
   text-shadow: 2px 2px black;
 }
 
-.card-deck-front-page .card-header {
-  color: var(--vanilla);
-  background-color: var(--green);
-}
-
 .img-quote {
   max-height: 300px;
   max-width: 300px;
 }
 
+.blog-post-img-container {
+  max-height: 400px;
+  max-width: 400px;
+}
+
 .content-post {
   font-size: 1.25rem;
+}
+
+.shadow-picture-lg {
+  box-shadow: 5px 5px var(--black);
+}
+
+.shadow-picture-sm {
+  box-shadow: 2px 2px var(--black);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -283,6 +327,10 @@ body {
 /* Column management */
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck-blog-page .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -295,10 +343,18 @@ body {
 /* Column management */
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck-blog-page .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .card-deck-blog-page .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
 }
 
 /* Column management */
