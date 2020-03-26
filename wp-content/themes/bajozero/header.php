@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php global $template;
-    console(basename($template)); ?>
+    // console(basename($template)); 
+    ?>
 
 </head>
 
@@ -16,7 +17,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
             <div class="container">
                 <a class="navbar-brand mx-auto" href=<?php bloginfo('url'); ?> style="padding-left: 56px">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png'?>" alt="" class="align-middle navbar-logo" />
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" alt="" class="align-middle navbar-logo" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">

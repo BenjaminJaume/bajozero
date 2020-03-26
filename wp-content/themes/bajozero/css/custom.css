@@ -189,7 +189,7 @@ body {
 
 /* BACKGROUNDS */
 
-.background-container {
+.bg-container {
   background: linear-gradient(
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 0.75)
@@ -197,9 +197,14 @@ body {
     url("../pictures/background.jpg") repeat;
 }
 
-.background-container-0-100 {
+.bg-container-0-100 {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)),
     url("../pictures/background.jpg") repeat;
+}
+
+.bg-0-30 {
+  -webkit-filter: opacity(0.3);
+  filter: opacity(0.3);
 }
 
 .bg-vanilla {
@@ -208,6 +213,31 @@ body {
 
 .bg-chocolate {
   background-color: var(--chocolate);
+}
+
+/* BACKGROUND COLORS FOR TEXT */
+[class*="bg-text-"] h3 {
+  text-shadow: 2px 2px black;
+}
+
+[class*="bg-text-"] p {
+  line-height: 1.3;
+}
+
+[class*="bg-text-"] span {
+  padding: 1px 10px;
+}
+
+.bg-text-1 span {
+  background-color: var(--chocolate);
+}
+
+.bg-text-2 span {
+  background-color: var(--green);
+}
+
+.bg-text-3 span {
+  background-color: var(--pink);
 }
 
 /* Featurettes
@@ -223,6 +253,7 @@ body {
 .featurette:nth-child(odd) .featurette-heading {
   background-color: var(--chocolate);
   color: var(--vanilla);
+  box-shadow: 3px 3px var(--vanilla);
 }
 
 .featurette-heading {
@@ -298,12 +329,51 @@ body {
   font-size: 1.25rem;
 }
 
-.shadow-picture-lg {
-  box-shadow: 5px 5px var(--black);
+.shadow-picture-sm {
+  box-shadow: 3px 3px var(--black);
 }
 
-.shadow-picture-sm {
-  box-shadow: 2px 2px var(--black);
+.frame,
+.frame-hover {
+  padding: 5px;
+  border: solid 1px #efefef;
+}
+
+.frame-hover:hover,
+.frame {
+  border: solid 1px #ccc;
+  -moz-box-shadow: 1px 1px 5px #999;
+  -webkit-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+}
+
+.page-title {
+  font-weight: normal;
+  /* -webkit-text-stroke: 1px var(--chocolate); */
+}
+
+.font-size-big {
+  font-size: 1.25rem;
+}
+
+.img-text-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-text-container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-text-container [class*="bg-text-"] span {
+  border-radius: 10px 0 10px 0;
+}
+
+.flavor-item span {
+  border-bottom: 1px solid black;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

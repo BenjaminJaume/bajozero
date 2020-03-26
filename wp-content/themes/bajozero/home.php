@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="background-container-0-100">
+<div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-pink text-uppercase">Latest news</h1>
+        <h1 class="display-4 text-center text-pink text-uppercase font-weight-normal page-title">Latest news</h1>
     </div>
 </div>
 
@@ -19,8 +19,8 @@
                                     <h1 class="h5 m-0"><?php echo get_the_title(); ?></h1>
                                 </a>
                             </div>
-                            <a href="<?php echo $post->guid; ?>" alt="">
-                                <img src=<?php echo get_the_post_thumbnail_url(); ?> class="card-img-top" alt="">
+                            <a href="<?php echo $post->guid; ?>" alt="" class="p-0 p-sm-3">
+                                <img src=<?php echo get_the_post_thumbnail_url(); ?> class="card-img-top frame-hover" alt="">
                             </a>
                             <div class="card-body">
                                 <p class="card-text">

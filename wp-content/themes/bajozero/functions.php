@@ -53,6 +53,9 @@ function load_javascript()
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', '', '4.3.1', true);
     wp_enqueue_script('bootstrap');
 
+    wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap.bundle.js', '', '4.3.1', true);
+    wp_enqueue_script('bootstrap-js');
+
     wp_register_script('aos', get_template_directory_uri() . '/js/vendor/aos.js', '', '2.3.1', true);
     wp_enqueue_script('aos');
 
@@ -61,6 +64,7 @@ function load_javascript()
 
     wp_register_script('axios', get_template_directory_uri() . '/js/vendor/axios.min.js', '', '0.19.2', true);
     wp_enqueue_script('axios');
+
 
     wp_register_script('custom_script', get_template_directory_uri() . '/js/custom.js', '', false, true);
     wp_enqueue_script('custom_script');
@@ -72,6 +76,9 @@ add_theme_support('menus');
 
 // Add thumbnail feature in Wordpress
 add_theme_support('post-thumbnails');
+
+// Add thumbnail feature in Wordpress
+add_theme_support('templates');
 
 // Add Boostrap Menu file with Wordpress
 function register_navwalker()
@@ -90,33 +97,3 @@ function console($data)
 {
     echo "<script>console.log('" . json_encode($data) . "');</script>";
 }
-
-// Custom post type function
-// function create_posttype()
-// {
-
-//     register_post_type(
-//         'client',
-//         // CPT Options
-//         array(
-//             'labels' => array(
-//                 'name' => __('Clients'),
-//                 'singular_name' => __('client')
-//             ),
-//             'public' => true,
-//             'has_archive' => true,
-//             'rewrite' => array('slug' => 'clients'),
-//             'show_in_rest' => true
-//         )
-//     );
-// }
-// // Hooking up our function to theme setup
-// add_action('init', 'create_posttype');
-
-// // turn off wysiwig for custom post types
-// add_action('init', 'init_remove_support', 100);
-// function init_remove_support()
-// {
-//     remove_post_type_support('client', 'editor');
-//     // remove_post_type_support( $post_type, 'editor');
-// }

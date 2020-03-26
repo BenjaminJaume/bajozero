@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <main role="main">
-    <div class="background-container">
+    <div class="bg-container">
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 col-md-6 align-self-center">
@@ -31,27 +31,27 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div id="carousel" class="carousel slide animated fadeIn slow" data-ride="carousel">
+                    <div id="carousel" class="carousel slide animated fadeIn slow frame" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel" data-slide-to="1"></li>
                             <li data-target="#carousel" data-slide-to="2"></li>
                         </ol>
-                        <div class="carousel-inner rounded">
+                        <div class="carousel-inner ">
                             <div class="carousel-item carousel-item-1 active" data-interval="10000">
-                                <div class="carousel-caption d-sm-block carousel-caption-color-1 text-vanilla">
+                                <div class="carousel-caption d-sm-block bg-text-1 text-vanilla">
                                     <h3 class="text-uppercase mb-1"><span>Discover our fresh products</span></h3>
                                     <p><span>Have a look at our <a href="/bajozero/flavors/" alt="" class="link-green">flavors page</a> to find the ice cream that fits you perfectly</span></p>
                                 </div>
                             </div>
                             <div class="carousel-item carousel-item-2" data-interval="10000">
-                                <div class="carousel-caption d-sm-block carousel-caption-color-2 text-vanilla">
+                                <div class="carousel-caption d-sm-block bg-text-2 text-vanilla">
                                     <h3 class="text-uppercase mb-1"><span>Follow us on social medias</span></h3>
                                     <p><span>Don't miss any last minute promotions and events at <a href="/bajozero/our-shop/" alt="" class="link-chocolate">our shop</a></span></p>
                                 </div>
                             </div>
                             <div class="carousel-item carousel-item-3" data-interval="10000">
-                                <div class="carousel-caption d-sm-block carousel-caption-color-3 text-vanilla">
+                                <div class="carousel-caption d-sm-block bg-text-3 text-vanilla">
                                     <h3 class="text-uppercase mb-1"><span>Come and visit us</span></h3>
                                     <p><span>We have a spacious venue with a backyard where you can have fun with your friends!</span></p>
                                 </div>
@@ -78,7 +78,7 @@
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
-                <img src="<?php echo content_url() . '/themes/bajozero/pictures/team.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500">
+                <img src="<?php echo content_url() . '/themes/bajozero/pictures/team.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500" />
             </div>
         </div>
 
@@ -88,7 +88,7 @@
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5 order-md-1" data-aos="slide-left" data-aos-once="true">
-                <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500">
+                <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500" />
             </div>
         </div>
 
@@ -98,7 +98,7 @@
                 <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
-                <img src="<?php echo content_url() . '/themes/bajozero/pictures/3.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500">
+                <img src="<?php echo content_url() . '/themes/bajozero/pictures/3.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500" />
             </div>
         </div>
     </div>
@@ -107,11 +107,11 @@
         <div class="card-deck card-deck-front-page mb-3 text-center">
             <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-once="true">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">🍦 Ice cream mix</h4>
+                    <h4 class="my-0 font-weight-normal">🍦 Idea #1</h4>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <a href="/bajozero/flavors/" alt="">
-                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="rounded img-fluid" alt="" width="500" height="500">
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="rounded img-fluid frame-hover" alt="" width="500" height="500" />
                     </a>
 
                     <div class="mt-4">
@@ -135,11 +135,11 @@
             </div>
             <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">🍧 Ice cream mix</h4>
+                    <h4 class="my-0 font-weight-normal">🍧 Idea #2</h4>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <a href="/bajozero/flavors/" alt="">
-                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/1.jpg' ?>" class="rounded img-fluid" alt="" width="500" height="500">
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/1.jpg' ?>" class="rounded img-fluid frame-hover" alt="" width="500" height="500" />
                     </a>
 
                     <div class="mt-4">
@@ -163,11 +163,11 @@
             </div>
             <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="400" data-aos-once="true">
                 <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">🍨 Ice cream mix</h4>
+                    <h4 class="my-0 font-weight-normal">🍨 Idea #3</h4>
                 </div>
                 <div class="card-body d-flex flex-column">
                     <a href="/bajozero/flavors/" alt="">
-                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/8.jpg' ?>" class="rounded img-fluid" alt="" width="500" height="500">
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/8.jpg' ?>" class="rounded img-fluid frame-hover" alt="" width="500" height="500" />
                     </a>
 
                     <div class="mt-4">

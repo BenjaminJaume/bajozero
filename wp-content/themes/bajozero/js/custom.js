@@ -57,3 +57,8 @@ win.scroll(function(event) {
     }
   });
 });
+
+// Enabling tooltips for Bootstrap
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});

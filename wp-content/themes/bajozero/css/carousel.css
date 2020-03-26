@@ -1,27 +1,3 @@
-[class*="carousel-caption-color-"] h3 {
-  text-shadow: 2px 2px black;
-}
-
-[class*="carousel-caption-color-"] p {
-  line-height: 1.3;
-}
-
-[class*="carousel-caption-color-"] span {
-  padding: 1px 10px;
-}
-
-.carousel-caption-color-1 span {
-  background-color: var(--chocolate);
-}
-
-.carousel-caption-color-2 span {
-  background-color: var(--green);
-}
-
-.carousel-caption-color-3 span {
-  background-color: var(--pink);
-}
-
 .carousel-item {
   height: 400px;
   background-size: cover;
