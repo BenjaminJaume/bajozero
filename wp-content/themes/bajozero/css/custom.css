@@ -202,9 +202,9 @@ body {
     url("../pictures/background.jpg") repeat;
 }
 
-.bg-0-30 {
-  -webkit-filter: opacity(0.3);
-  filter: opacity(0.3);
+.bg-0-50 {
+  -webkit-filter: opacity(0.5);
+  filter: opacity(0.5);
 }
 
 .bg-vanilla {
@@ -213,6 +213,10 @@ body {
 
 .bg-chocolate {
   background-color: var(--chocolate);
+}
+
+.price-container {
+  background-color: var(--vanilla);
 }
 
 /* BACKGROUND COLORS FOR TEXT */
@@ -240,8 +244,7 @@ body {
   background-color: var(--pink);
 }
 
-/* Featurettes
-------------------------- */
+/* FEATURETTES */
 
 .featurette:nth-child(even),
 .featurette:nth-child(even) .featurette-heading {
@@ -249,10 +252,17 @@ body {
   color: var(--chocolate);
 }
 
+.featurette:nth-child(even) img {
+  box-shadow: 3px 3px var(--chocolate);
+}
+
 .featurette:nth-child(odd),
 .featurette:nth-child(odd) .featurette-heading {
   background-color: var(--chocolate);
   color: var(--vanilla);
+}
+
+.featurette:nth-child(odd) img {
   box-shadow: 3px 3px var(--vanilla);
 }
 
@@ -282,6 +292,17 @@ body {
 .card-deck-blog-page .card {
   margin: 0 0.1rem 0.2rem;
   border-radius: 0;
+}
+
+/* CARD DECK FLAVORS PAGE */
+
+.card-deck-flavors-page .card-header {
+  border-radius: 0;
+}
+
+.card-deck-flavors-page .card-header {
+  color: var(--vanilla);
+  background-color: var(--chocolate);
 }
 
 /* SLIDE IN BLOG POSTS */
@@ -349,7 +370,10 @@ body {
 
 .page-title {
   font-weight: normal;
-  /* -webkit-text-stroke: 1px var(--chocolate); */
+  letter-spacing: 8px;
+  -webkit-text-stroke: 2px var(--chocolate);
+  color: var(--green);
+  font-family: "Impact";
 }
 
 .font-size-big {
@@ -372,8 +396,19 @@ body {
   border-radius: 10px 0 10px 0;
 }
 
-.flavor-item span {
-  border-bottom: 1px solid black;
+.item-text-chocolate span {
+  color: var(--chocolate);
+  border-bottom: 1px solid var(--chocolate);
+}
+
+.item-text-green span {
+  color: var(--green);
+  border-bottom: 1px solid var(--green);
+}
+
+.item-text-pink span {
+  color: var(--pink);
+  border-bottom: 1px solid var(--pink);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -397,6 +432,16 @@ body {
 /* Column management */
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck-front-page .card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  
+  .card-deck-flavors-page .card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+
   .card-deck-blog-page .card {
     -ms-flex: 0 0 48.7%;
     flex: 0 0 48.7%;
@@ -413,6 +458,16 @@ body {
 /* Column management */
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck-front-page .card {
+    -ms-flex: 0 0 44%;
+    flex: 0 0 44%;
+  }
+
+  .card-deck-flavors-page .card {
+    -ms-flex: 0 0 44%;
+    flex: 0 0 44%;
+  }
+
   .card-deck-blog-page .card {
     -ms-flex: 0 0 48.7%;
     flex: 0 0 48.7%;
@@ -430,6 +485,15 @@ body {
 /* Column management */
 /* Large devices (desktops) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-deck-front-page .card {
+    -ms-flex: 0 0 44%;
+    flex: 0 0 44%;
+  }
+
+  .card-deck-flavors-page .card {
+    -ms-flex: 0 0 44%;
+    flex: 0 0 44%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
