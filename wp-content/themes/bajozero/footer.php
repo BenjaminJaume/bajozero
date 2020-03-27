@@ -2,7 +2,7 @@
     <div class="color-filter">
     </div>
 </div>
-<footer class="footer">
+<footer class="footer bg-chocolate">
     <div class="d-flex justify-content-center py-5 text-center">
         <div class="row align-items-center align-items-center">
             <div class="col-12 col-md-6">

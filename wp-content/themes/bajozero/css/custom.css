@@ -147,7 +147,8 @@ body {
 }
 
 .btn-vanilla:hover {
-  color: var(--green);
+  color: var(--chocolate);
+  -webkit-text-stroke: 0.5px var(--chocolate);
 }
 
 .btn-vanilla.hvr-sweep-to-top:before {
@@ -156,20 +157,6 @@ body {
 
 .btn-vanilla.hvr-underline-from-center:before {
   background: var(--chocolate);
-}
-
-.btn-facebook {
-  color: var(--white);
-  background-color: var(--facebook);
-}
-
-.btn-facebook:hover {
-  color: var(--white);
-  border-color: var(--facebook-dark);
-}
-
-.btn-facebook.hvr-underline-from-center:before {
-  background: var(--facebook-dark);
 }
 
 .btn-chocolate {
@@ -421,6 +408,10 @@ body {
 
 #modal-flavor .modal-header .close {
     margin: -1rem -1rem -1rem 0;
+}
+
+.flavor-item span {
+  cursor: pointer;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

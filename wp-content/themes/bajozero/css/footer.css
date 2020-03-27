@@ -2,7 +2,6 @@
   height: 75px;
   background-image: url("../pictures/background.jpg");
   background-position: center;
-  /* border-top: 2px solid var(--vanilla); */
   border-bottom: 2px solid var(--vanilla);
 }
 
@@ -18,7 +17,6 @@
 }
 
 .footer {
-  background-color: var(--chocolate);
 }
 
 .social-media-icon {

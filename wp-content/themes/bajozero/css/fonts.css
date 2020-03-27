@@ -22,6 +22,15 @@ Author: Benjamin Jaume
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local("Gothic CG No 1"), local("Impact"),
+  src: local("Impact"), local("Impact"),
     url("../fonts/Impact.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Yellowtail"), local("Yellowtail"),
+    url("../fonts/Yellowtail.woff") format("woff");
 }

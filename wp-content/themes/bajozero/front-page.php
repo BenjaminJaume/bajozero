@@ -72,7 +72,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row featurette py-5 px-md-5">
+        <div class="row featurette py-5 px-md-5 align-items-center">
             <div class="col-md-7 pr-5" data-aos="slide-right" data-aos-once="true">
                 <h2 class="featurette-heading">This is our team. <span class="text-pink">And we are here for you</span></h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -82,17 +82,17 @@
             </div>
         </div>
 
-        <div class="row featurette py-5 px-md-5">
-            <div class="col-md-7" data-aos="slide-left" data-aos-once="true">
+        <div class="row featurette py-5 px-md-5 align-items-center">
+            <div class="col-md-7 order-md-2" data-aos="slide-left" data-aos-once="true">
                 <h2 class="featurette-heading">Oh yeah, it’s good. <span class="text-orange">Latest flavor: caramel & vanilla.</span></h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
-            <div class="col-md-5" data-aos="slide-left" data-aos-once="true">
+            <div class="col-md-5 order-md-1" data-aos="slide-left" data-aos-once="true">
                 <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500" />
             </div>
         </div>
 
-        <div class="row featurette py-5 px-md-5">
+        <div class="row featurette py-5 px-md-5 align-items-center">
             <div class="col-md-7" data-aos="slide-right" data-aos-once="true">
                 <h2 class="featurette-heading">Come and discover our venue. <span class="text-green">We are located <a href="/bajozero/our-shop/" alt="" class="link-green link-decoration">here</a></span></h2>
                 <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

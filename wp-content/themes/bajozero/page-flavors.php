@@ -10,7 +10,9 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal page-title">Flavors</h1>
+        <h1 class="display-4 text-center text-uppercase font-weight-normal page-title animated slow fadeInDown">
+            Flavors
+        </h1>
     </div>
 </div>
 
@@ -85,7 +87,6 @@ $sauces = array(
                     echo('
                         <dd class="flavor-item item-text-chocolate">
                             <span
-                                type="button"
                                 data-toggle="modal"
                                 data-target="#modal-flavor"
                                 data-picture="
@@ -120,7 +121,6 @@ $sauces = array(
                         echo('
                             <dd class="flavor-item item-text-green">
                                 <span
-                                    type="button"
                                     data-toggle="modal"
                                     data-target="#modal-flavor"
                                     data-picture="
@@ -156,7 +156,6 @@ $sauces = array(
                         echo('
                             <dd class="flavor-item item-text-pink">
                                 <span
-                                    type="button"
                                     data-toggle="modal"
                                     data-target="#modal-flavor"
                                     data-picture="
@@ -295,8 +294,8 @@ $sauces = array(
         <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="img-quote rounded shadow-picture-sm img-fluid " alt="">
     </p>
 
-    <blockquote class="h3 blockquote animated pulse infinite slow">
-        <i class="mb-0 text-green">Ice-cream is the favorite currency of love.</i>
+    <blockquote class="h3 blockquote">
+        <p class="m-0 text-green font-italic animated pulse infinite slow">Ice-cream is the favorite currency of love.</p>
         <footer class="blockquote-footer text-pink">Puck</footer>
     </blockquote>
 
