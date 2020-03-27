@@ -3,8 +3,8 @@
     </div>
 </div>
 <footer class="footer">
-    <div class="container-fluid py-5 text-center">
-        <div class="row">
+    <div class="d-flex justify-content-center py-5 text-center">
+        <div class="row align-items-center align-items-center">
             <div class="col-12 col-md-6">
                 <div class="mb-3">
                     <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" class="logo-footer" alt="">
@@ -14,7 +14,7 @@
                 </span>
             </div>
 
-            <div class="col-12 col-md-6 align-self-center mt-4 mt-md-0">
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
                 <p class="text-vanilla text-uppercase mt-2 text-shadow">Bajo Zero on social medias</p>
                 <ul class="social-media-icon mx-auto mb-5">
                     <li>

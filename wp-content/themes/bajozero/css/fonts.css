@@ -16,3 +16,12 @@ Author: Benjamin Jaume
   src: local("Gothic CG No 1"), local("Gothic-CG-No-1"),
     url("../fonts/Gothic-CG-No-1.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Impact";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Gothic CG No 1"), local("Impact"),
+    url("../fonts/Impact.woff") format("woff");
+}
