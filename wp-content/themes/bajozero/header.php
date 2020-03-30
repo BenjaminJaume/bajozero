@@ -5,6 +5,12 @@
     <?php wp_head(); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/pictures/favicon/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/apple-touch-icon.png' ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/favicon-32x32.png' ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/favicon-16x16.png' ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/site.webmanifest' ?>">
+
     <?php global $template;
     // console(basename($template)); 
     ?>
