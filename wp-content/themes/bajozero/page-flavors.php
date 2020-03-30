@@ -183,7 +183,7 @@ $sauces = array(
     </div>
 </div>
 
-<div class="container-fluid price-container my-5">
+<div class="container-fluid price-container my-5" data-aos="fade-down" data-aos-once="true">
     <div class="row">
         <div class="col-12 col-sm-10 col-md-8 mx-auto">
             <h1 class="title display-4 text-green text-center font-weight-normal text-uppercase">
@@ -191,7 +191,7 @@ $sauces = array(
             </h1>
 
             <div class="card-deck card-deck-flavors-page justify-content-center mb-3 text-center">
-                <div class="card rounded-0 mb-4 shadow-sm" data-aos="fade-down" data-aos-once="true">
+                <div class="card rounded-0 mb-4 shadow-sm">
                     <div class="card-header bg-chocolate text-vanilla">
                         <h4 class="my-0 font-weight-light">#1 Ice cream only 👍</h4>
                     </div>
@@ -228,7 +228,7 @@ $sauces = array(
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-0 mb-4 shadow-sm" data-aos="fade-down" data-aos-once="true">
+                <div class="card rounded-0 mb-4 shadow-sm">
                     <div class="card-header bg-green text-vanilla">
                         <h4 class="my-0 font-weight-light">#2 Ice cream + topping 👌</h4>
                     </div>
@@ -257,7 +257,7 @@ $sauces = array(
                         </div>
                     </div>
                 </div>
-                <div class="card rounded-0 mb-4 shadow-sm" data-aos="fade-down" data-aos-once="true">
+                <div class="card rounded-0 mb-4 shadow-sm">
                     <div class="card-header bg-pink text-vanilla">
                         <h4 class="my-0 font-weight-light">#3 Combo 🤩</h4>
                     </div>
