@@ -2,7 +2,7 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal page-title animated slow fadeInDown">Latest news</h1>
+        <h1 class="display-4 text-center text-uppercase font-weight-normal title animated slow fadeInDown">Latest news</h1>
     </div>
 </div>
 
@@ -49,9 +49,9 @@
 </div>
 </div>
 
-<hr class="divider w-75" />
+<hr class="divider w-50" />
 
-<div class="container text-center my-5">
+<div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
     <p>
         <img src="<?php echo content_url() . '/themes/bajozero/pictures/2.jpg' ?>" class="img-quote rounded shadow-picture-sm img-fluid " alt="">
     </p>

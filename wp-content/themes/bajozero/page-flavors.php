@@ -10,7 +10,7 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal page-title animated slow fadeInDown">
+        <h1 class="display-4 text-center text-uppercase font-weight-normal title animated slow fadeInDown">
             Flavors
         </h1>
     </div>
@@ -83,8 +83,8 @@ $sauces = array(
             <div>
                 <dl class="font-size-big font-weight-light">
 
-                <?php foreach($flavors as $flavor) {
-                    echo('
+                    <?php foreach ($flavors as $flavor) {
+                        echo ('
                         <dd class="flavor-item item-text-chocolate">
                             <span
                                 data-toggle="modal"
@@ -117,8 +117,8 @@ $sauces = array(
             <div>
                 <dl class="font-size-big font-weight-light">
 
-                    <?php foreach($toppings as $topping) {
-                        echo('
+                    <?php foreach ($toppings as $topping) {
+                        echo ('
                             <dd class="flavor-item item-text-green">
                                 <span
                                     data-toggle="modal"
@@ -152,8 +152,8 @@ $sauces = array(
 
             <div>
                 <dl class="font-size-big font-weight-light">
-                    <?php foreach($sauces as $sauce) {
-                        echo('
+                    <?php foreach ($sauces as $sauce) {
+                        echo ('
                             <dd class="flavor-item item-text-pink">
                                 <span
                                     data-toggle="modal"
@@ -186,18 +186,18 @@ $sauces = array(
 <div class="container-fluid price-container my-5">
     <div class="row">
         <div class="col-12 col-sm-10 col-md-8 mx-auto">
-            <h1 class="display-4 text-green text-center font-weight-normal text-uppercase">
+            <h1 class="title display-4 text-green text-center font-weight-normal text-uppercase">
                 Prices
             </h1>
 
             <div class="card-deck card-deck-flavors-page justify-content-center mb-3 text-center">
                 <div class="card rounded-0 mb-4 shadow-sm" data-aos="fade-down" data-aos-once="true">
-                    <div class="card-header">
+                    <div class="card-header bg-chocolate text-vanilla">
                         <h4 class="my-0 font-weight-light">#1 Ice cream only 👍</h4>
                     </div>
                     <div class="card-body d-flex align-items-center">
                         <div>
-                            <h5 class="text-orange mb-3">You can chose up to 3 different flavors</h5>
+                            <h5 class="text-chocolate mb-3">You can chose up to 3 different flavors</h5>
 
                             <dl class="list-unstyled">
                                 <dd>
@@ -229,12 +229,12 @@ $sauces = array(
                     </div>
                 </div>
                 <div class="card rounded-0 mb-4 shadow-sm" data-aos="fade-down" data-aos-once="true">
-                    <div class="card-header">
+                    <div class="card-header bg-green text-vanilla">
                         <h4 class="my-0 font-weight-light">#2 Ice cream + topping 👌</h4>
                     </div>
                     <div class="card-body d-flex align-items-center">
                         <div>
-                            <h5 class="text-pink mb-3">Pick your favorite flavors and add up to 2 toppings</h5>
+                            <h5 class="text-green mb-3">Pick your favorite flavors and add up to 2 toppings</h5>
 
                             <dl class="list-unstyled">
                                 <dd>
@@ -258,12 +258,12 @@ $sauces = array(
                     </div>
                 </div>
                 <div class="card rounded-0 mb-4 shadow-sm" data-aos="fade-down" data-aos-once="true">
-                    <div class="card-header">
+                    <div class="card-header bg-pink text-vanilla">
                         <h4 class="my-0 font-weight-light">#3 Combo 🤩</h4>
                     </div>
                     <div class="card-body d-flex align-items-center">
                         <div>
-                            <h5 class="text-green mb-3">If you're really hungry, just put some extra sauce on it!</h5>
+                            <h5 class="text-pink mb-3">If you're really hungry, just put some extra sauce on it!</h5>
 
                             <dl class="list-unstyled">
                                 <dd>
@@ -289,7 +289,7 @@ $sauces = array(
 
 </div>
 
-<div class="container text-center my-5">
+<div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
     <p>
         <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="img-quote rounded shadow-picture-sm img-fluid " alt="">
     </p>

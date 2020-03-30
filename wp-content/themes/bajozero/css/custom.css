@@ -128,6 +128,14 @@ body {
   color: var(--pink-0-75);
 }
 
+.link-orange {
+  color: var(--orange);
+}
+
+.link-orange:hover {
+  color: var(--orange-0-75);
+}
+
 /* FONT FAMILY */
 
 .font-impact {
@@ -149,10 +157,6 @@ body {
 .btn-vanilla:hover {
   color: var(--chocolate);
   -webkit-text-stroke: 0.5px var(--chocolate);
-}
-
-.btn-vanilla.hvr-sweep-to-top:before {
-  background: var(--chocolate);
 }
 
 .btn-vanilla.hvr-underline-from-center:before {
@@ -295,11 +299,6 @@ body {
   border-radius: 0;
 }
 
-.card-deck-flavors-page .card-header {
-  color: var(--vanilla);
-  background-color: var(--chocolate);
-}
-
 /* SLIDE IN BLOG POSTS */
 .come-in {
   transform: translateY(150px);
@@ -317,8 +316,11 @@ body {
 
 /* OTHER */
 
-/* Picture in footer */
-.logo-footer {
+textarea {
+  resize: none;
+}
+
+.logo-lg {
   width: 128px;
   height: 128px;
 }
@@ -363,7 +365,7 @@ body {
   box-shadow: 1px 1px 5px #999;
 }
 
-.page-title {
+.title {
   font-weight: normal;
   letter-spacing: 8px;
   -webkit-text-stroke: 2px var(--chocolate);
