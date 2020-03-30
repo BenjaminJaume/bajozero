@@ -10,7 +10,7 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal title animated slow fadeInDown">Contact</h1>
+        <h1 class="display-4 text-center text-uppercase font-weight-normal title-green animated slow fadeInDown">Contact</h1>
     </div>
 </div>
 
@@ -27,13 +27,15 @@
 </div>
 
 
-<div class="container bg-vanilla my-5 py-5 align-items-center">
-    <div class="row">
-        <div class="col-auto mx-auto" data-aos="fade-down" data-aos-once="true">
-            <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" class="logo-lg mb-5" alt="">
+<div class="container align-items-center rounded-lg">
+    <div class="row bg-green py-5 rounded-top">
+        <div class="mx-auto">
+            <h1 class="title-vanilla display-4 text-uppercase m-0" data-aos="fade-down" data-aos-once="true">
+                Let's keep in touch
+            </h1>
         </div>
     </div>
-    <div class="row align-items-center">
+    <div class="row bg-vanilla align-items-center py-5 rounded-bottom">
         <div class="col-12 col-md-6 text-center mx-auto mb-5 mb-md-0" data-aos="fade-right" data-aos-once="true">
             <a href="#" alt="" class="link-chocolate text-decoration-none">
                 <span class="text-chocolate">
@@ -64,10 +66,25 @@
                 </p>
             </a>
         </div>
-        <div class="col-12 col-md-6 text-center mx-auto px-md-5" data-aos="fade-left" data-aos-once="true">
+        <div class="col-12 col-sm-8 col-md-6 text-center mx-auto px-md-5" data-aos="fade-left" data-aos-once="true">
             <div class="form-group m-0">
-                <?php echo do_shortcode('[contact-form-7 id="169" title="Contact form"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="76" title="Contact form"]'); ?>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5" data-aos="fade-up" data-aos-once="true">
+    <div class="row">
+        <div class="mx-auto">
+            <h1 class="title display-4 mt-0">
+                Find us here
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto frame">
+            <?php echo do_shortcode('[wpgmza id="1"]'); ?>
         </div>
     </div>
 </div>

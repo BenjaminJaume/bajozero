@@ -365,11 +365,19 @@ textarea {
   box-shadow: 1px 1px 5px #999;
 }
 
-.title {
+.title-green {
   font-weight: normal;
   letter-spacing: 8px;
   -webkit-text-stroke: 2px var(--chocolate);
   color: var(--green);
+  font-family: "Impact";
+}
+
+.title-vanilla  {
+  font-weight: normal;
+  letter-spacing: 8px;
+  -webkit-text-stroke: 2px var(--chocolate);
+  color: var(--vanilla);
   font-family: "Impact";
 }
 

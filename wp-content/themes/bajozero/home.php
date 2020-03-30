@@ -2,7 +2,7 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal title animated slow fadeInDown">Latest news</h1>
+        <h1 class="display-4 text-center text-uppercase font-weight-normal title-green animated slow fadeInDown">Latest news</h1>
     </div>
 </div>
 

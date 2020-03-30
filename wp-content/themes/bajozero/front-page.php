@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-12 col-md-6 align-self-center">
                 <div class="text-center">
-                    <h1 class="display-3 text-green text-uppercase font-impact my-0 animated heartBeat slow">
+                    <h1 class="display-3 text-green text-uppercase font-impact my-0 animated fadeInDown">
                         Bajo Zero
                     </h1>
                     <div class="animated fadeInRight">

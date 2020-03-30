@@ -6,8 +6,11 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="text-center">
                     <div class="mb-4">
-                        <h1 class="display-4 font-weight-normal text-chocolate mb-0"><?php the_title(); ?></h1>
-                        <span class="h4 text-muted">
+                        <i class="text-center text-uppercase m-0">
+                            Blog post
+                        </i>
+                        <h1 class="display-4 title-vanilla text-uppercase m-0"><?php the_title(); ?></h1>
+                        <span class="h4">
                             <i class="far fa-clock"></i>
                             <?php the_time('d/m/Y'); ?>
                         </span>
