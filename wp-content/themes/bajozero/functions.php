@@ -22,16 +22,21 @@ function load_stylesheet()
 
     wp_register_style('aos', get_template_directory_uri() . '/css/vendor/aos.css', array(), '2.3.1', 'all');
     wp_enqueue_style('aos');
-    
+
+    wp_register_style('cssgram', get_template_directory_uri() . '/css/vendor/cssgram.min.css', array(), false, 'all');
+    wp_enqueue_style('cssgram');
+
+    // Customed stylesheets
+
     wp_register_style('fonts', get_template_directory_uri() . '/css/fonts.css', array(), false, 'all');
     wp_enqueue_style('fonts');
-    
+
     wp_register_style('navbar', get_template_directory_uri() . '/css/navbar.css', array(), false, 'all');
     wp_enqueue_style('navbar');
-    
+
     wp_register_style('footer', get_template_directory_uri() . '/css/footer.css', array(), false, 'all');
     wp_enqueue_style('footer');
-    
+
     wp_register_style('carousel', get_template_directory_uri() . '/css/carousel.css', array(), false, 'all');
     wp_enqueue_style('carousel');
 
@@ -65,6 +70,7 @@ function load_javascript()
     wp_register_script('axios', get_template_directory_uri() . '/js/vendor/axios.min.js', '', '0.19.2', true);
     wp_enqueue_script('axios');
 
+    // Custom scripts
 
     wp_register_script('custom_script', get_template_directory_uri() . '/js/custom.js', '', false, true);
     wp_enqueue_script('custom_script');

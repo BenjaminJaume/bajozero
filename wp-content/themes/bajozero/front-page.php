@@ -18,11 +18,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="animated fadeInRight font-italic font-weight-bold text-center mb-4">
-                        The story started in 2007, and we will keep<br />
-                        offering you delicious homemade customed rolled ice cream!<i class="fas fa-heart"></i><br />
-                    </div> -->
-
                 <div class="animated fadeInLeft text-center mb-5">
                     <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-underline-from-center" alt="">
                         Contact us

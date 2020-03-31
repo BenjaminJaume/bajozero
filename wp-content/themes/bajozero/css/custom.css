@@ -191,11 +191,10 @@ body {
 .bg-container-0-100 {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)),
     url("../pictures/background.jpg") repeat;
-  }
-  
+}
+
 .bg-container-shop {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)),
-    url("../pictures/toppings/sprinkles.jpg");
+  background: url("../pictures/shop-front.jpg");
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -327,6 +326,43 @@ body {
   }
 }
 
+/* TITLES */
+
+.title-green {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--green);
+  font-family: "Impact";
+}
+
+.title-vanilla {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--vanilla);
+  font-family: "Impact";
+}
+
+.title-chocolate {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--chocolate);
+  font-family: "Impact";
+}
+
+.title-pink {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--pink);
+  font-family: "Impact";
+}
+
+.title-orange {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--orange);
+  font-family: "Impact";
+}
+
 /* OTHER */
 
 textarea {
@@ -378,44 +414,6 @@ textarea {
   box-shadow: 1px 1px 5px #999;
 }
 
-.title-green {
-  font-weight: normal;
-  letter-spacing: 8px;
-  -webkit-text-stroke: 2px var(--chocolate);
-  color: var(--green);
-  font-family: "Impact";
-}
-
-.title-vanilla  {
-  font-weight: normal;
-  letter-spacing: 8px;
-  -webkit-text-stroke: 2px var(--chocolate);
-  color: var(--vanilla);
-  font-family: "Impact";
-}
-
-.title-vanilla-light  {
-  font-weight: normal;
-  letter-spacing: 3px;
-  color: var(--vanilla);
-  font-family: "Impact";
-}
-
-.title-chocolate  {
-  font-weight: normal;
-  letter-spacing: 8px;
-  -webkit-text-stroke: 1px var(--vanilla);
-  color: var(--pink);
-  font-family: "Impact";
-}
-
-.title-chocolate-light  {
-  font-weight: normal;
-  letter-spacing: 3px;
-  color: var(--chocolate);
-  font-family: "Impact";
-}
-
 .font-size-big {
   font-size: 1.25rem;
 }
@@ -452,11 +450,34 @@ textarea {
 }
 
 #modal-flavor .modal-header .close {
-    margin: -1rem -1rem -1rem 0;
+  margin: -1rem -1rem -1rem 0;
 }
 
 .flavor-item span {
   cursor: pointer;
+}
+
+.top-row-shop {
+  border-bottom: 2px solid var(--vanilla);
+}
+
+[class*="item-row-shop"] {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.item-row-shop-1 {
+  background-image: url("../pictures/shop-map.jpg");
+}
+
+.item-row-shop-2 {
+  background-image: url("../pictures/11.jpg");
+}
+
+.item-row-shop-3 {
+  background-image: url("../pictures/team.jpg");
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -484,7 +505,7 @@ textarea {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
-  
+
   .card-deck-flavors-page .card {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -500,6 +521,10 @@ textarea {
 @media (min-width: 768px) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+
+  [class*="item-row-shop"] {
+    height: 400px;
   }
 }
 
@@ -527,6 +552,10 @@ textarea {
   .card-deck-blog-page .card {
     -ms-flex: 0 0 32%;
     flex: 0 0 32%;
+  }
+
+  [class*="item-row-shop"] {
+    height: 500px;
   }
 }
 
