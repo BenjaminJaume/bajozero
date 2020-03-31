@@ -191,6 +191,15 @@ body {
 .bg-container-0-100 {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)),
     url("../pictures/background.jpg") repeat;
+  }
+  
+.bg-container-shop {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)),
+    url("../pictures/toppings/sprinkles.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-0-50 {
@@ -212,6 +221,10 @@ body {
 
 .bg-pink {
   background-color: var(--pink);
+}
+
+.bg-orange {
+  background-color: var(--orange);
 }
 
 .price-container {
@@ -378,6 +391,28 @@ textarea {
   letter-spacing: 8px;
   -webkit-text-stroke: 2px var(--chocolate);
   color: var(--vanilla);
+  font-family: "Impact";
+}
+
+.title-vanilla-light  {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--vanilla);
+  font-family: "Impact";
+}
+
+.title-chocolate  {
+  font-weight: normal;
+  letter-spacing: 8px;
+  -webkit-text-stroke: 1px var(--vanilla);
+  color: var(--pink);
+  font-family: "Impact";
+}
+
+.title-chocolate-light  {
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: var(--chocolate);
   font-family: "Impact";
 }
 
