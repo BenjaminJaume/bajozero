@@ -32,7 +32,7 @@
                         <li data-target="#carousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner ">
-                        <div class="carousel-item carousel-item-1 active" data-interval="10000">
+                        <div class="carousel-item carousel-item- active" data-interval="10000">
                             <div class="carousel-caption d-sm-block bg-text-1 text-vanilla">
                                 <h3 class="text-uppercase mb-1"><span>Discover our fresh products</span></h3>
                                 <p><span>Have a look at our <a href="/bajozero/flavors/" alt="" class="link-green">flavors page</a> to find the ice cream that fits you perfectly</span></p>
