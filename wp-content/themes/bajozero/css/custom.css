@@ -185,16 +185,17 @@ body {
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 0.75)
     ),
-    url("../pictures/background.jpg") repeat;
+    url("../pictures/background-sprinkles.jpg") repeat;
 }
 
 .bg-container-0-100 {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)),
-    url("../pictures/background.jpg") repeat;
+    url("../pictures/background-sprinkles.jpg") repeat;
 }
 
+
 .bg-container-shop {
-  background: url("../pictures/shop-front.jpg");
+  background: url("../pictures/slumber/shop/shop-front-slumber.jpg");
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -204,6 +205,11 @@ body {
 .bg-0-50 {
   -webkit-filter: opacity(0.5);
   filter: opacity(0.5);
+}
+
+.bg-0-50-black {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .bg-vanilla {
@@ -473,7 +479,7 @@ textarea {
 }
 
 .item-row-shop-2 {
-  background-image: url("../pictures/11.jpg");
+  background-image: url("../pictures/slumber/shop/shop-front-slumber.jpg");
 }
 
 .item-row-shop-3 {
@@ -501,6 +507,22 @@ textarea {
 
 .image-box:hover img {
   transform: scale(1.4);
+}
+
+.video-container {
+  overflow: hidden;
+  height: 500px;
+}
+
+.video-container video {
+  height: 100%;
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
+  position: absolute;
+  left: 50%; /* % of surrounding element */
+  top: 50%;
+  transform: translate(-50%, -50%); /* % of current element */
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

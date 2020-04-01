@@ -7,12 +7,11 @@
 ?>
 
 <?php get_header(); ?>
-<!-- 
-<div class="container-fluid m-0 p-0" style="height: 400px">
-    <div class="img-text-container">
-        <video autoplay loop muted poster="screenshot.jpg" id="background" class="img-fluid">
-            <source src="<?php // echo content_url() . '/themes/bajozero/pictures/videos/top.mp4' 
-                            ?>" type="video/mp4">
+
+<div class="container-fluid m-0 p-0">
+    <div class="img-text-container video-container top-row-shop">
+        <video autoplay loop muted poster="screenshot.jpg" id="background" class="slumber bg-0-50-black">
+            <source src="<?php echo content_url() . '/themes/bajozero/pictures/videos/1.mp4' ?>" type="video/mp4">
         </video>
         <span class="centered m-0">
             <h1 class="title-vanilla display-2 text-uppercase">
@@ -20,25 +19,10 @@
             </h1>
         </span>
     </div>
-</div> -->
-
-<style>
-    #overlayText {
-        position: absolute;
-        top: 30%;
-        left: 20%;
-        z-index: 1;
-    }
-
-    #topText {
-        color: white;
-        font-size: 20px;
-        align-self: center;
-    }
-</style>
+</div>
 
 <div class="container-fluid">
-    <div class="row top-row-shop" data-aos="fade-down" data-aos-once="true">
+    <!-- <div class="row top-row-shop" data-aos="fade-down" data-aos-once="true">
         <div class="col-12 p-0 m-0">
             <div class="img-text-container bg-container-shop">
                 <span class="centered m-0">
@@ -48,7 +32,7 @@
                 </span>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="row">
         <div class="col-12 col-md-6 px-0" data-aos="fade-right" data-aos-once="true">
             <div class="slumber">
@@ -78,7 +62,7 @@
                 <h1 class="title-green text-uppercase m-0">
                     When it started
                 </h1>
-                <div class="text-chocolate h5 m-0 px-0 px-lg-5">
+                <div class="text-chocolate h5 m-0">
                     <p class="m-0 px-lg-5">
                         The adventure started in 2004. With a lot of prepartion and time, the first Helados a la plancha shop in Liberia was now opened!
                     </p>
@@ -124,7 +108,7 @@
                     Oragnic Eggs
                 </p>
                 <div class="image-box rounded">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/eggs.jpg' ?>" class="img-fluid" alt="">
+                    <?php echo wp_get_attachment_image(113, '', false, 'class=img-fluid') ?>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
@@ -132,7 +116,7 @@
                     Almond milk
                 </p>
                 <div class="image-box rounded">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/milk.jpg' ?>" class="img-fluid" alt="">
+                    <?php echo wp_get_attachment_image(114, '', false, 'class=img-fluid') ?>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
@@ -140,7 +124,7 @@
                     Cane sugar
                 </p>
                 <div class="image-box rounded">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/sugar.jpg' ?>" class="img-fluid" alt="">
+                    <?php echo wp_get_attachment_image(102, '', false, 'class=img-fluid') ?>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
@@ -148,7 +132,7 @@
                     Natural flavors
                 </p>
                 <div class="image-box rounded">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/vanilla.jpg' ?>" class="img-fluid" alt="">
+                    <?php echo wp_get_attachment_image(115, '', false, 'class=img-fluid') ?>
                 </div>
             </div>
         </div>
@@ -166,10 +150,10 @@
     <div class="row text-center text-lg-left">
         <?php foreach ($array_pictures as $picture) {
             echo ('
-            <div class="col-12 col-sm-6 col-md-4" data-aos="flip-left" data-aos-once="true">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-left" data-aos-once="true">
                 <div class="frame mb-4">
                     <figure class="slumber m-0">
-                        <img src="' . content_url() . '/themes/bajozero/pictures/shop/shop-' . $picture . '.jpg" class=\"img-fluid\" alt="">
+                        <img src="' . content_url() . '/themes/bajozero/pictures/slumber/shop/shop-' . $picture . '-slumber.jpg" class=\"img-fluid\" alt="">
                     </figure>
                 </div>
             </div>
@@ -199,7 +183,7 @@
 
 <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
     <p>
-        <img src="<?php echo content_url() . '/themes/bajozero/pictures/5.jpg' ?>" class="img-quote rounded shadow-picture-sm img-fluid " alt="">
+        <?php echo wp_get_attachment_image(104, '', false, 'class=img-quote rounded shadow-picture-sm img-fluid') ?>
     </p>
 
     <blockquote class="h3 blockquote animated pulse infinite slow">

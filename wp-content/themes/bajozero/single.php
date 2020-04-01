@@ -9,8 +9,8 @@
                         <i class="text-center text-uppercase m-0">
                             Blog post
                         </i>
-                        <h1 class="display-4 title-vanilla text-uppercase m-0"><?php the_title(); ?></h1>
-                        <span class="h4">
+                        <h1 class="display-4 title-green text-uppercase m-0"><?php the_title(); ?></h1>
+                        <span class="h4 text-muted">
                             <i class="far fa-clock"></i>
                             <?php the_time('d/m/Y'); ?>
                         </span>

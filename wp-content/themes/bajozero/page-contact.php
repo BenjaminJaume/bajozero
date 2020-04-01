@@ -79,7 +79,7 @@
 <div class="container my-5" data-aos="fade-up" data-aos-once="true">
     <div class="row">
         <div class="mx-auto">
-            <h1 class="title-green display-4 mt-0">
+            <h1 class="h1 title-green text-uppercase mt-0 mb-4">
                 Find us here
             </h1>
         </div>

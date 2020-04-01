@@ -72,7 +72,7 @@ $sauces = array(
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
-                <img src="<?php echo content_url() . '/themes/bajozero/pictures/ice-cream-flavors.jpg' ?>" class="img-flavors-page img-fluid frame bg-0-50" alt="" width="500" height="500" />
+                <?php echo wp_get_attachment_image(98, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <h1 class="centered text-vanilla bg-text-1 m-0">
                     <span>
                         Flavors
@@ -90,7 +90,7 @@ $sauces = array(
                                 data-toggle="modal"
                                 data-target="#modal-flavor"
                                 data-picture="
-                                    <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/flavors/' . str_replace(' ', '-', $flavor) . '.jpg />
+                                    <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/slumber/flavors/' . str_replace(' ', '-', $flavor) . '-slumber.jpg />
                                 "
                                 data-title="' . $flavor . '"
                                 class="text-capitalize"
@@ -106,7 +106,7 @@ $sauces = array(
         </div>
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-down" data-aos-once="true">
             <div class="img-text-container mb-3">
-                <img src="<?php echo content_url() . '/themes/bajozero/pictures/ice-cream-toppings.jpg' ?>" class="img-flavors-page img-fluid frame bg-0-50" alt="" width="500" height="500" />
+                <?php echo wp_get_attachment_image(97, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <h1 class="centered text-vanilla bg-text-2 m-0">
                     <span>
                         Toppings
@@ -124,7 +124,7 @@ $sauces = array(
                                     data-toggle="modal"
                                     data-target="#modal-flavor"
                                     data-picture="
-                                        <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/toppings/' . str_replace(' ', '-', $topping) . '.jpg />
+                                        <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/slumber/toppings/' . str_replace(' ', '-', $topping) . '-slumber.jpg />
                                     "
                                     data-title="' . $topping . '"
                                     class="text-capitalize"
@@ -141,7 +141,7 @@ $sauces = array(
         <div class="col-12 col-sm-6 col-md-4 text-center mx-sm-auto" data-aos="fade-left" data-aos-once="true">
 
             <div class="img-text-container mb-3">
-                <img src="<?php echo content_url() . '/themes/bajozero/pictures/ice-cream-sauces.jpg' ?>" class="img-flavors-page img-fluid frame bg-0-50" alt="" width="500" height="500" />
+                <?php echo wp_get_attachment_image(96, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <h1 class="centered text-vanilla bg-text-3 m-0">
                     <span>
                         Sauce
@@ -159,7 +159,7 @@ $sauces = array(
                                     data-toggle="modal"
                                     data-target="#modal-flavor"
                                     data-picture="
-                                        <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/sauces/' . str_replace(' ', '-', $sauce) . '.jpg />
+                                        <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/slumber/sauces/' . str_replace(' ', '-', $sauce) . '-slumber.jpg />
                                     "
                                     data-title="' . $sauce . '"
                                     class="text-capitalize"
@@ -291,7 +291,7 @@ $sauces = array(
 
 <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
     <p>
-        <img src="<?php echo content_url() . '/themes/bajozero/pictures/6.jpg' ?>" class="img-quote rounded shadow-picture-sm img-fluid " alt="">
+        <?php echo wp_get_attachment_image(83, '', false, 'class=img-quote rounded shadow-picture-sm img-fluid') ?>
     </p>
 
     <blockquote class="h3 blockquote">

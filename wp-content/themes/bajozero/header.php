@@ -9,11 +9,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/favicon-32x32.png' ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/favicon-16x16.png' ?>">
     <link rel="manifest" href="<?php echo content_url() . '/themes/bajozero/pictures/favicon/site.webmanifest' ?>">
-
-    <?php global $template;
-    // console(basename($template)); 
-    ?>
-
 </head>
 
 <body>
@@ -22,7 +17,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
             <div class="container">
                 <a class="navbar-brand mx-auto" href=<?php bloginfo('url'); ?> style="padding-left: 56px">
-                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" alt="" class="align-middle navbar-logo" />
+                    <?php echo wp_get_attachment_image(111, '', false, 'class=align-middle navbar-logo') ?>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
