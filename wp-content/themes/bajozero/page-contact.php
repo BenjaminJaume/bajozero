@@ -32,7 +32,7 @@
 <div class="container align-items-center rounded-lg">
     <div class="row bg-green py-5 rounded-top">
         <div class="mx-auto">
-            <h1 class="title-vanilla display-4 text-uppercase m-0" data-aos="fade-down" data-aos-once="true">
+            <h1 class="h1 title-vanilla text-uppercase m-0" data-aos="fade-down" data-aos-once="true">
                 Let's keep in touch
             </h1>
         </div>
