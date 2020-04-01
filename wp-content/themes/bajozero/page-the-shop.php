@@ -8,11 +8,34 @@
 
 <?php get_header(); ?>
 <!-- 
-<div class="bg-container-0-100">
-    <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal title-green animated slow fadeInDown">The shop</h1>
+<div class="container-fluid m-0 p-0" style="height: 400px">
+    <div class="img-text-container">
+        <video autoplay loop muted poster="screenshot.jpg" id="background" class="img-fluid">
+            <source src="<?php // echo content_url() . '/themes/bajozero/pictures/videos/top.mp4' 
+                            ?>" type="video/mp4">
+        </video>
+        <span class="centered m-0">
+            <h1 class="title-vanilla display-2 text-uppercase">
+                The shop
+            </h1>
+        </span>
     </div>
 </div> -->
+
+<style>
+    #overlayText {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        z-index: 1;
+    }
+
+    #topText {
+        color: white;
+        font-size: 20px;
+        align-self: center;
+    }
+</style>
 
 <div class="container-fluid">
     <div class="row top-row-shop" data-aos="fade-down" data-aos-once="true">
@@ -90,8 +113,50 @@
     </div>
 </div>
 
+<div class="bg-green">
+    <div class="container py-5">
+        <h1 class="title-chocolate display-4 text-center text-uppercase mt-0">
+            Our secret
+        </h1>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <p class="h3 text-vanilla text-center text-uppercase font-impact mt-5 mt-sm-0 mb-md-4">
+                    Oragnic Eggs
+                </p>
+                <div class="image-box rounded">
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/eggs.jpg' ?>" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <p class="h3 text-vanilla text-center text-uppercase font-impact mt-5 mt-sm-0 mb-md-4">
+                    Almond milk
+                </p>
+                <div class="image-box rounded">
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/milk.jpg' ?>" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                <p class="h3 text-vanilla text-center text-uppercase font-impact mt-5 mt-sm-0 mb-md-4">
+                    Cane sugar
+                </p>
+                <div class="image-box rounded">
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/sugar.jpg' ?>" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4 mt-lg-0">
+                <p class="h3 text-vanilla text-center text-uppercase font-impact mt-5 mt-sm-0 mb-md-4">
+                    Natural flavors
+                </p>
+                <div class="image-box rounded">
+                    <img src="<?php echo content_url() . '/themes/bajozero/pictures/vanilla.jpg' ?>" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container my-5">
-    <h1 class="title-chocolate display-4 text-center text-uppercase">Gallery</h1>
+    <h1 class="title-chocolate display-4 text-center text-uppercase" data-aos="fade-down" data-aos-once="true">Gallery</h1>
 
     <?php $array_pictures = [
         "1", "2", "3", "9", "5", "6", "7", "8", "9"
@@ -101,7 +166,7 @@
     <div class="row text-center text-lg-left">
         <?php foreach ($array_pictures as $picture) {
             echo ('
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4" data-aos="flip-left" data-aos-once="true">
                 <div class="frame mb-4">
                     <figure class="slumber m-0">
                         <img src="' . content_url() . '/themes/bajozero/pictures/shop/shop-' . $picture . '.jpg" class=\"img-fluid\" alt="">
@@ -114,12 +179,37 @@
     </div>
 </div>
 
+<div class="container-fluid container-hiring bg-green my-5">
+    <div class="d-flex flex-column justify-content-center align-items-center text-center h-100">
+        <h1 class="display-4 font-impact text-vanilla mb-3 mt-0" data-aos="fade-down" data-aos-once="true">
+            We are hiring!
+        </h1>
+        <p class="h4 text-chocolate font-weight-light" data-aos="fade-left" data-aos-once="true">
+            If you're a big ice cream fan, please drop us a message!
+        </p>
+        <div class="text-center mt-2" data-aos="fade-up" data-aos-once="true">
+            <a href="/bajozero/contact/" class="btn btn-vanilla rounded-0 hvr-underline-from-center" alt="">
+                Contact us
+            </a>
+        </div>
+    </div>
+</div>
+
+<hr class="divier w-50" />
+
+<div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
+    <p>
+        <img src="<?php echo content_url() . '/themes/bajozero/pictures/5.jpg' ?>" class="img-quote rounded shadow-picture-sm img-fluid " alt="">
+    </p>
+
+    <blockquote class="h3 blockquote animated pulse infinite slow">
+        <i class="mb-0 text-green">I guess ice cream is one of those things that are beyond imagination.</i>
+        <footer class="blockquote-footer text-pink">L.M. Montgomery</footer>
+    </blockquote>
+</div>
+
 <!-- 
 
-the team
-hiring
-vr integration
-We use only milk, eggs, cane sugar and natural ingredients
 Why? Two friends from college with the same values
  -->
 

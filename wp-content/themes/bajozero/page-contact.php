@@ -10,7 +10,9 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal title-green animated slow fadeInDown">Contact</h1>
+        <h1 class="display-3 title-green text-center text-uppercase animated slow fadeInDown">
+            Contact
+        </h1>
     </div>
 </div>
 

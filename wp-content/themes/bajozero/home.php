@@ -2,7 +2,9 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal title-green animated slow fadeInDown">Latest news</h1>
+        <h1 class="display-3 title-green text-center text-uppercase animated slow fadeInDown">
+            Latest news
+        </h1>
     </div>
 </div>
 
@@ -60,7 +62,6 @@
         <i class="mb-0 text-green">Without ice cream, there would be darkness and chaos.</i>
         <footer class="blockquote-footer text-pink">Don Kardong</footer>
     </blockquote>
-
 </div>
 
 <?php get_footer(); ?>

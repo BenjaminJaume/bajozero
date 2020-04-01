@@ -10,7 +10,7 @@
 
 <div class="bg-container-0-100">
     <div class="container py-5">
-        <h1 class="display-4 text-center text-uppercase font-weight-normal title-green animated slow fadeInDown">
+        <h1 class="display-3 title-green text-center text-uppercase animated slow fadeInDown">
             Flavors
         </h1>
     </div>
@@ -186,7 +186,7 @@ $sauces = array(
 <div class="container-fluid price-container my-5" data-aos="fade-down" data-aos-once="true">
     <div class="row">
         <div class="col-12 col-sm-10 col-md-8 mx-auto">
-            <h1 class="title display-4 text-green text-center font-weight-normal text-uppercase">
+            <h1 class="title-green display-4 text-center text-uppercase">
                 Prices
             </h1>
 
