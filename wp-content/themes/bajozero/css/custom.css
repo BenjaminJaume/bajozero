@@ -371,6 +371,10 @@ body {
 
 /* OTHER */
 
+.carousel-item {
+  height: 400px;
+}
+
 textarea {
   resize: none;
 }
@@ -512,6 +516,10 @@ textarea {
 .video-container {
   overflow: hidden;
   height: 500px;
+  background: url("../pictures/slumber/shop/shop-front-slumber.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .video-container video {
@@ -523,6 +531,12 @@ textarea {
   left: 50%; /* % of surrounding element */
   top: 50%;
   transform: translate(-50%, -50%); /* % of current element */
+}
+
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

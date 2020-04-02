@@ -37,9 +37,6 @@ function load_stylesheet()
     wp_register_style('footer', get_template_directory_uri() . '/css/footer.css', array(), false, 'all');
     wp_enqueue_style('footer');
 
-    wp_register_style('carousel', get_template_directory_uri() . '/css/carousel.css', array(), false, 'all');
-    wp_enqueue_style('carousel');
-
     wp_register_style('custom_stylesheet', get_template_directory_uri() . '/css/custom.css', array(), 1, 'all');
     wp_enqueue_style('custom_stylesheet');
 }
@@ -102,4 +99,11 @@ register_nav_menus(
 function console($data)
 {
     echo "<script>console.log('" . json_encode($data) . "');</script>";
+}
+
+// turn off wysiwig for custom post types
+add_action('init', 'init_remove_support', 100);
+function init_remove_support()
+{
+    remove_post_type_support('page', 'editor');
 }
