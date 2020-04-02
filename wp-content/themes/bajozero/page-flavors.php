@@ -40,7 +40,7 @@
     </div>
 </div>
 
-<?php // $flavors = ['vanilla', 'chocolate', 'cookie'];
+<?php
 $flavors = array(
     "vanilla",
     "chocolate",
@@ -72,7 +72,7 @@ $sauces = array(
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
-                <?php echo wp_get_attachment_image(98, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
+                <?php echo wp_get_attachment_image(35, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <h1 class="centered text-vanilla bg-text-1 m-0">
                     <span>
                         Flavors
@@ -106,7 +106,7 @@ $sauces = array(
         </div>
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-down" data-aos-once="true">
             <div class="img-text-container mb-3">
-                <?php echo wp_get_attachment_image(97, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
+                <?php echo wp_get_attachment_image(36, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <h1 class="centered text-vanilla bg-text-2 m-0">
                     <span>
                         Toppings
@@ -141,7 +141,7 @@ $sauces = array(
         <div class="col-12 col-sm-6 col-md-4 text-center mx-sm-auto" data-aos="fade-left" data-aos-once="true">
 
             <div class="img-text-container mb-3">
-                <?php echo wp_get_attachment_image(96, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
+                <?php echo wp_get_attachment_image(37, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <h1 class="centered text-vanilla bg-text-3 m-0">
                     <span>
                         Sauce
@@ -291,7 +291,7 @@ $sauces = array(
 
 <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
     <p>
-        <?php echo wp_get_attachment_image(83, '', false, 'class=img-quote rounded shadow-picture-sm img-fluid') ?>
+        <?php echo wp_get_attachment_image(38, '', false, 'class=img-quote rounded shadow-picture-sm img-fluid') ?>
     </p>
 
     <blockquote class="h3 blockquote">

@@ -10,8 +10,8 @@
 
 <div class="container-fluid m-0 p-0">
     <div class="img-text-container video-container top-row-shop">
-        <video autoplay loop muted poster="screenshot.jpg" id="background" class="slumber bg-0-50-black">
-            <source src="<?php echo content_url() . '/themes/bajozero/pictures/videos/1.mp4' ?>" type="video/mp4">
+        <video autoplay loop muted poster="<?php echo content_url() . '/themes/bajozero/pictures/slumber/shop/shop-front-slumber.jpg' ?>" id="background" class="slumber bg-0-50-black">
+            <source src="<?php echo content_url() . '/themes/bajozero/pictures/videos/2.mp4' ?>" type="video/mp4">
         </video>
         <span class="centered m-0">
             <h1 class="title-vanilla display-2 text-uppercase">
@@ -143,7 +143,7 @@
     <h1 class="title-chocolate display-4 text-center text-uppercase" data-aos="fade-down" data-aos-once="true">Gallery</h1>
 
     <?php $array_pictures = [
-        "1", "2", "3", "9", "5", "6", "7", "8", "9"
+        "shop-1", "shop-2", "shop-3", "shop-9", "shop-5", "shop-6", "shop-7", "shop-8", "shop-9"
     ]
     ?>
 
@@ -153,7 +153,7 @@
             <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-left" data-aos-once="true">
                 <div class="frame mb-4">
                     <figure class="slumber m-0">
-                        <img src="' . content_url() . '/themes/bajozero/pictures/slumber/shop/shop-' . $picture . '-slumber.jpg" class=\"img-fluid\" alt="">
+                        <img src="' . content_url() . '/themes/bajozero/pictures/slumber/shop/' . $picture . '-slumber.jpg" class=\"img-fluid\" alt="">
                     </figure>
                 </div>
             </div>

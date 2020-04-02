@@ -74,7 +74,7 @@
         <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
             <div class="slumber">
                 <!-- <img src="<?php // echo content_url() . '/themes/bajozero/pictures/team.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500" /> -->
-                <?php echo wp_get_attachment_image(81, [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto') ?>
+                <?php echo wp_get_attachment_image(28, [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto') ?>
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
         </div>
         <div class="col-md-5 order-md-1" data-aos="slide-left" data-aos-once="true">
             <div class="slumber">
-                <?php echo wp_get_attachment_image(82, [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto') ?>
+                <?php echo wp_get_attachment_image(30, [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto') ?>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@
         </div>
         <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
             <div class="slumber">
-                <?php echo wp_get_attachment_image(85, [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto') ?>
+                <?php echo wp_get_attachment_image(31, [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto') ?>
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
             </div>
             <div class="card-body d-flex flex-column">
                 <a href="/bajozero/flavors/" alt="">
-                    <?php echo wp_get_attachment_image(90, [500, 500], false, 'class=rounded img-fluid frame-hover') ?>
+                    <?php echo wp_get_attachment_image(32, [500, 500], false, 'class=rounded img-fluid frame-hover') ?>
                 </a>
 
                 <div class="mt-4">
@@ -140,7 +140,7 @@
             </div>
             <div class="card-body d-flex flex-column">
                 <a href="/bajozero/flavors/" alt="">
-                    <?php echo wp_get_attachment_image(89, [500, 500], false, 'class=rounded img-fluid frame-hover') ?>
+                    <?php echo wp_get_attachment_image(33, [500, 500], false, 'class=rounded img-fluid frame-hover') ?>
                 </a>
 
                 <div class="mt-4">
@@ -168,7 +168,7 @@
             </div>
             <div class="card-body d-flex flex-column">
                 <a href="/bajozero/flavors/" alt="">
-                    <?php echo wp_get_attachment_image(91, [500, 500], false, 'class=rounded img-fluid frame-hover') ?>
+                    <?php echo wp_get_attachment_image(34, [500, 500], false, 'class=rounded img-fluid frame-hover') ?>
                 </a>
 
                 <div class="mt-4">
