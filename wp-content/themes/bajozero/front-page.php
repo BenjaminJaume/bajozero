@@ -1,7 +1,5 @@
 <!-- Front page -->
 
-<?php get_header(); ?>
-
 <?php 
 
 $text_top = get_field('text_top');
@@ -18,6 +16,9 @@ $card_2 = $cards['card_2'];
 $card_3 = $cards['card_3'];
 
 ?>
+
+<?php get_header(); ?>
+
 
 <div class="bg-container">
     <div class="container py-5">

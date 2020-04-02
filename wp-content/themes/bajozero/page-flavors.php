@@ -6,6 +6,13 @@
 
 ?>
 
+<?php 
+
+$flavors_picture = get_field('picture');
+$flavors = get_field('flavors');
+
+?>
+
 <?php get_header(); ?>
 
 <div class="bg-container-0-100">
@@ -41,16 +48,16 @@
 </div>
 
 <?php
-$flavors = array(
-    "vanilla",
-    "chocolate",
-    "cookies &amp; cream",
-    "mint chocolate chip",
-    "cookie dough",
-    "strawberry",
-    "buttered pecan",
-    "blackberry"
-);
+// $flavors = array(
+//     "vanilla",
+//     "chocolate",
+//     "cookies &amp; cream",
+//     "mint chocolate chip",
+//     "cookie dough",
+//     "strawberry",
+//     "buttered pecan",
+//     "blackberry"
+// );
 
 $toppings = array(
     "sprinkles",
@@ -73,6 +80,13 @@ $sauces = array(
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(35, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
+                <?php 
+                    if($flavors_picture['ID']) {
+                        echo wp_get_attachment_image($flavors_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    } else {
+                        echo wp_get_attachment_image($flavors_picture, '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    }
+                ?>
                 <h1 class="centered text-vanilla bg-text-1 m-0">
                     <span>
                         Flavors
@@ -83,24 +97,30 @@ $sauces = array(
             <div>
                 <dl class="font-size-big font-weight-light">
 
-                    <?php foreach ($flavors as $flavor) {
-                        echo ('
-                        <dd class="flavor-item item-text-chocolate">
-                            <span
-                                data-toggle="modal"
-                                data-target="#modal-flavor"
-                                data-picture="
-                                    <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/slumber/flavors/' . str_replace(' ', '-', $flavor) . '-slumber.jpg />
-                                "
-                                data-title="' . $flavor . '"
-                                class="text-capitalize"
-                            >
-                                ' . $flavor . '
-                            </span>
-                        </dd>
-                    ');
-                    } ?>
-
+                    <?php
+                        foreach ($flavors as $flavor) {
+                            if($flavor['picture']['ID']) {
+                                $id = $flavor['picture']['ID'];
+                            } else {
+                                $id = $flavor['picture'];
+                            }
+                            echo ('
+                            <dd class="flavor-item item-text-chocolate">
+                                <span
+                                    data-toggle="modal"
+                                    data-target="#modal-flavor"
+                                    data-picture="
+                                        <img class=\'img-fluid rounded frame\' src=' . wp_get_attachment_image_src($id, '', false)[0] . ' />
+                                    "
+                                    data-title="' . $flavor['name'] . '"
+                                    class="text-capitalize"
+                                >
+                                    ' . $flavor['name'] . '
+                                </span>
+                            </dd>
+                            ');
+                        }
+                    ?>
                 </dl>
             </div>
         </div>
