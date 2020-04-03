@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<!-- Blog Post Page -->
+
+<?php
+
+$quote = get_field('quote', get_option('page_for_posts'));
+
+get_header(); ?>
 
 <div class="bg-container-0-100">
     <div class="container py-5">
@@ -49,17 +55,35 @@
 </div>
 </div>
 
-<hr class="divider w-50" />
 
-<div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
-    <p>
-        <?php echo wp_get_attachment_image(104, '', false, 'class=img-quote rounded shadow-picture-sm img-fluid') ?>
-    </p>
+<?php
+    if($quote['display'] == "Yes") { ?>
 
-    <blockquote class="h3 blockquote animated pulse infinite slow">
-        <i class="mb-0 text-green">Without ice cream, there would be darkness and chaos.</i>
-        <footer class="blockquote-footer text-pink">Don Kardong</footer>
-    </blockquote>
-</div>
+        <hr class="divider w-50" />
+
+        <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
+            <p>
+                <?php 
+                    if($quote['picture']['ID']) {
+                        echo wp_get_attachment_image($quote['picture']['ID'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
+                    } else {
+                        echo wp_get_attachment_image($quote['picture'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
+                    }
+                ?>
+            </p>
+
+            <blockquote class="h3 blockquote">
+                <p class="m-0 text-green font-italic animated pulse infinite slow">
+                    <?php echo $quote['content']; ?>
+                </p>
+                <footer class="blockquote-footer text-pink">
+                    <?php echo $quote['author']; ?>
+                </footer>
+            </blockquote>
+
+        </div>
+<?php
+    }
+?>
 
 <?php get_footer(); ?>

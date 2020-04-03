@@ -67,7 +67,7 @@ $quote = get_field('quote');
         </div>
         <div class="col-12 col-md-6 bg-chocolate item-row-shop" data-aos="fade-left" data-aos-once="true">
             <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 py-5 px-0 px-sm-3 px-md-5">
-                <h1 class="title-green text-uppercase m-0">
+                <h1 class="title-green text-uppercase mb-2">
                     <?php echo $row_1['title']; ?>
                 </h1>
                 <div class="text-vanilla h5 m-0">
@@ -79,7 +79,7 @@ $quote = get_field('quote');
     <div class="row">
         <div class="col-12 col-md-6 bg-vanilla order-1 order-md-0 item-row-shop" data-aos="fade-right" data-aos-once="true">
             <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 py-5 px-0 px-sm-3 px-md-5">
-                <h1 class="title-green text-uppercase m-0">
+                <h1 class="title-green text-uppercase mb-2">
                     <?php echo $row_2['title']; ?>
                 </h1>
                 <div class="text-chocolate h5 m-0">
@@ -119,7 +119,7 @@ $quote = get_field('quote');
         </div>
         <div class="col-12 col-md-6 bg-chocolate item-row-shop" data-aos="fade-left" data-aos-once="true">
             <div class="d-flex flex-column justify-content-center align-items-center text-center h-100 py-5 px-0 px-sm-3 px-md-5">
-                <h1 class="title-green text-uppercase m-0">
+                <h1 class="title-green text-uppercase mb-2">
                     <?php echo $row_3['title']; ?>
                 </h1>
                 <div class="text-vanilla h5 m-0">

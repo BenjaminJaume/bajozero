@@ -61,17 +61,11 @@ get_header();
                             <div class="carousel-caption d-sm-block bg-text-1 text-vanilla">
                                 <h3 class="text-uppercase mb-1">
                                     <span>
-                                        <!-- Discover our fresh products -->
                                         <?php echo $carousel['first']['title'] ?>
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
-                                        <!-- Have a look at our 
-                                        <a href="/bajozero/flavors/" alt="" class="link-green">
-                                            flavors page
-                                        </a>
-                                         to find the ice cream that fits you perfectly -->
                                          <?php echo $carousel['first']['caption'] ?>
                                     </span>
                                 </p>
@@ -88,16 +82,11 @@ get_header();
                             <div class="carousel-caption d-sm-block bg-text-2 text-vanilla">
                                 <h3 class="text-uppercase mb-1">
                                     <span>
-                                        <!-- Follow us on social medias -->
                                         <?php echo $carousel['second']['title'] ?>
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
-                                        <!-- Don't miss any last minute promotions and events at 
-                                        <a href="/bajozero/our-shop/" alt="" class="link-chocolate">
-                                            The shop
-                                        </a> -->
                                         <?php echo $carousel['second']['caption'] ?>
                                     </span>
                                 </p>
@@ -114,13 +103,11 @@ get_header();
                             <div class="carousel-caption d-sm-block bg-text-3 text-vanilla">
                                 <h3 class="text-uppercase mb-1">
                                     <span>
-                                        <!-- Come and visit us -->
                                         <?php echo $carousel['third']['title'] ?>
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
-                                        <!-- We have a spacious venue with a backyard where you can have fun with your friends! -->
                                         <?php echo $carousel['third']['caption'] ?>
                                     </span>
                                 </p>
@@ -151,12 +138,10 @@ get_header();
                 </span>
             </h2>
             <p class="lead">
-                <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
                 <?php echo $row_1['caption']; ?>
             </p>
         </div>
         <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
-                <!-- <img src="<?php // echo content_url() . '/themes/bajozero/pictures/team.jpg' ?>" class="shadow-picture-lg img-fluid mx-auto" alt="" width="500" height="500" /> -->
             <div class="slumber">
                 <?php 
                     if($row_1['picture']['ID']) {
@@ -172,14 +157,12 @@ get_header();
     <div class="row featurette py-5 px-md-5 align-items-center">
         <div class="col-md-7 order-md-2" data-aos="slide-left" data-aos-once="true">
             <h2 class="featurette-heading">
-                <!-- Oh yeah, it’s good. <span class="text-orange">Latest flavor: caramel & vanilla.</span> -->
                 <?php echo $row_2['title_1']; ?>
                 <span class="text-orange">
                     <?php echo $row_2['title_2']; ?>
                 </span>
             </h2>
             <p class="lead">
-                <!-- Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. -->
                 <?php echo $row_2['caption']; ?>
             </p>
         </div>
@@ -199,19 +182,12 @@ get_header();
     <div class="row featurette py-5 px-md-5 align-items-center">
         <div class="col-md-7" data-aos="slide-right" data-aos-once="true">
             <h2 class="featurette-heading">
-                <!-- Come and discover our venue.
-                <span class="text-green">We are located
-                    <a href="/bajozero/our-shop/" alt="" class="link-green link-decoration">
-                        here
-                    </a>
-                </span> -->
                 <?php echo  $row_3['title_1']; ?>
                 <span class="text-green">
                     <?php echo  $row_3['title_2']; ?>
                 </span>
             </h2>
             <p class="lead">
-                <!-- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
                 <?php echo $row_3['caption']; ?>
             </p>
         </div>
@@ -234,7 +210,6 @@ get_header();
         <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-once="true">
             <div class="card-header rounded-top">
                 <h4 class="my-0 font-weight-light">
-                    <!-- 🍦 Idea #1 -->
                     <?php echo $card_1['title']; ?>
                 </h4>
             </div>
@@ -253,10 +228,6 @@ get_header();
                     <p class="text-green mb-1">Contains:</p>
 
                     <ul class="list-unstyled ">
-                        <!-- <li>Vanilla</li>
-                        <li>Caramel</li>
-                        <li>Marshmallow</li>
-                        <li>Strawberry topping</li> -->
                         <?php foreach( $card_1['list'] as $items ): ?>
                             <li><?php echo $items; ?></li>
                         <?php endforeach; ?>
@@ -274,7 +245,6 @@ get_header();
         <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
             <div class="card-header rounded-top">
                 <h4 class="my-0 font-weight-light">
-                    <!-- 🍧 Idea #2 -->
                     <?php echo $card_2['title']; ?>
                 </h4>
             </div>
@@ -293,10 +263,6 @@ get_header();
                     <p class="text-pink mb-1">Contains:</p>
 
                     <ul class="list-unstyled ">
-                        <!-- <li>Chocolate</li>
-                        <li>Almond</li>
-                        <li>Oreo</li>
-                        <li>Vanilla topping</li> -->
                         <?php foreach( $card_2['list'] as $items ): ?>
                             <li><?php echo $items; ?></li>
                         <?php endforeach; ?>
@@ -314,7 +280,6 @@ get_header();
         <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="400" data-aos-once="true">
             <div class="card-header rounded-top">
                 <h4 class="my-0 font-weight-light">
-                    <!-- 🍨 Idea #3 -->
                     <?php echo $card_3['title']; ?>
                 </h4>
             </div>
@@ -333,10 +298,6 @@ get_header();
                     <p class="text-orange mb-1">Contains:</p>
 
                     <ul class="list-unstyled ">
-                        <!-- <li>Pistachio</li>
-                        <li>Mint</li>
-                        <li>Sugar sprinkles</li>
-                        <li>Chocolate topping</li> -->
                         <?php foreach( $card_3['list'] as $items ): ?>
                             <li><?php echo $items; ?></li>
                         <?php endforeach; ?>

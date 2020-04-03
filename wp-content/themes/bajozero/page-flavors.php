@@ -356,6 +356,9 @@ $quote = get_field('quote');
 
 <?php
     if($quote['display'] == "Yes") { ?>
+
+        <hr class="divider w-50" />
+
         <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
             <p>
                 <?php 
