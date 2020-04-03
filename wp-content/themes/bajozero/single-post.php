@@ -28,7 +28,7 @@
     <div class="row">
         <div class="col-12 col-md-8 col-lg-6 mx-auto">
             <div class="text-center blog-post-img-container mx-auto mb-3">
-                <img src=<?php echo get_the_post_thumbnail_url(); ?> class="img-fluid frame" alt="">
+                <img src=<?php echo get_the_post_thumbnail_url(); ?> class="img-fluid frame slumber" alt="">
             </div>
 
             <div>

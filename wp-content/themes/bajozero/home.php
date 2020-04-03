@@ -28,7 +28,7 @@ get_header(); ?>
                                 </a>
                             </div>
                             <a href="<?php echo get_post_permalink(); ?>" alt="" class="p-0 p-sm-3">
-                                <img src=<?php echo get_the_post_thumbnail_url(); ?> class="card-img-top frame-hover" alt="">
+                                <img src=<?php echo get_the_post_thumbnail_url(); ?> class="card-img-top frame-hover slumber" alt="">
                             </a>
                             <div class="card-body card-text">
                                 <?php the_excerpt(); ?>
