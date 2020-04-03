@@ -287,6 +287,7 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.05rem;
+  margin-top: 0;
 }
 
 /* CARD DECK FRONT PAGE */
@@ -571,10 +572,6 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-
   [class*="item-row-shop"] {
     height: 400px;
   }
@@ -601,6 +598,10 @@ textarea {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+
   .card-deck-blog-page .card {
     -ms-flex: 0 0 32%;
     flex: 0 0 32%;

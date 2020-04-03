@@ -130,7 +130,7 @@ get_header();
 
 <div class="container-fluid">
     <div class="row featurette py-5 px-md-5 align-items-center">
-        <div class="col-md-7 pr-5" data-aos="slide-right" data-aos-once="true">
+        <div class="col-sm-6 col-lg-7 text-center text-sm-left pr-lg-5" data-aos="slide-right" data-aos-once="true">
             <h2 class="featurette-heading">
                 <?php echo $row_1['title_1']; ?>
                 <span class="text-pink">
@@ -141,7 +141,7 @@ get_header();
                 <?php echo $row_1['caption']; ?>
             </p>
         </div>
-        <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
+        <div class="col-sm-6 col-lg-5" data-aos="slide-right" data-aos-once="true">
             <div class="slumber">
                 <?php 
                     if($row_1['picture']['ID']) {
@@ -155,7 +155,7 @@ get_header();
     </div>
 
     <div class="row featurette py-5 px-md-5 align-items-center">
-        <div class="col-md-7 order-md-2" data-aos="slide-left" data-aos-once="true">
+        <div class="col-sm-6 col-lg-7 text-center text-sm-left pr-lg-5 order-sm-2" data-aos="slide-left" data-aos-once="true">
             <h2 class="featurette-heading">
                 <?php echo $row_2['title_1']; ?>
                 <span class="text-orange">
@@ -166,7 +166,7 @@ get_header();
                 <?php echo $row_2['caption']; ?>
             </p>
         </div>
-        <div class="col-md-5 order-md-1" data-aos="slide-left" data-aos-once="true">
+        <div class="col-sm-6 col-lg-5 order-sm-1" data-aos="slide-left" data-aos-once="true">
             <div class="slumber">
                 <?php
                     if($row_2['picture']['ID']) {
@@ -180,7 +180,7 @@ get_header();
     </div>
 
     <div class="row featurette py-5 px-md-5 align-items-center">
-        <div class="col-md-7" data-aos="slide-right" data-aos-once="true">
+        <div class="col-sm-6 col-lg-7 text-center text-sm-left pr-lg-5" data-aos="slide-right" data-aos-once="true">
             <h2 class="featurette-heading">
                 <?php echo  $row_3['title_1']; ?>
                 <span class="text-green">
@@ -191,7 +191,7 @@ get_header();
                 <?php echo $row_3['caption']; ?>
             </p>
         </div>
-        <div class="col-md-5" data-aos="slide-right" data-aos-once="true">
+        <div class="col-sm-6 col-lg-5" data-aos="slide-right" data-aos-once="true">
             <div class="slumber">
                 <?php
                     if($row_3['picture']['ID']) {
