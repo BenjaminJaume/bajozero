@@ -20,7 +20,7 @@
                     <p class="text-vanilla text-uppercase mt-2 text-shadow">Bajo Zero on social medias</p>
                     <ul class="social-media-icon mx-auto mb-5">
                         <li>
-                            <a href="https://www.facebook.com/BajoZeroCostaRica/" alt="" target="_blank">
+                            <a href="https://www.facebook.com/BajoZeroCostaRica" alt="" target="_blank">
                                 <i class="fab fa-facebook-square facebook-icon"></i>
                             </a>
                         </li>
@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/heladeria_bajozero/" alt="" target="_blank">
+                            <a href="https://www.instagram.com/heladeria_bajozero" alt="" target="_blank">
                                 <i class="fab fa-instagram-square instagram-icon"></i>
                             </a>
                         </li>

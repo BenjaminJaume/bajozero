@@ -4,12 +4,19 @@
  Template Name: Flavors
  */
 
-?>
+$flavors_picture = get_field('flavors_picture');
+$toppings_picture = get_field('toppings_picture');
+$sauces_picture = get_field('sauces_picture');
 
-<?php 
-
-$flavors_picture = get_field('picture');
 $flavors = get_field('flavors');
+$toppings = get_field('toppings');
+$sauces = get_field('sauces');
+
+$price_ice_cream = get_field('price_ice_cream');
+$price_toppings = get_field('price_toppings');
+$price_sauces = get_field('price_sauces');
+
+$quote = get_field('quote');
 
 ?>
 
@@ -47,39 +54,10 @@ $flavors = get_field('flavors');
     </div>
 </div>
 
-<?php
-// $flavors = array(
-//     "vanilla",
-//     "chocolate",
-//     "cookies &amp; cream",
-//     "mint chocolate chip",
-//     "cookie dough",
-//     "strawberry",
-//     "buttered pecan",
-//     "blackberry"
-// );
-
-$toppings = array(
-    "sprinkles",
-    "oreo",
-    "peanut butter cups",
-    "cookie",
-    "marshmallow",
-    "cereal",
-    "m&m's"
-);
-
-$sauces = array(
-    "hot chocolate",
-    "caramel",
-    "strawberry"
-); ?>
-
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
-                <?php echo wp_get_attachment_image(35, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <?php 
                     if($flavors_picture['ID']) {
                         echo wp_get_attachment_image($flavors_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
@@ -97,36 +75,52 @@ $sauces = array(
             <div>
                 <dl class="font-size-big font-weight-light">
 
-                    <?php
-                        foreach ($flavors as $flavor) {
-                            if($flavor['picture']['ID']) {
-                                $id = $flavor['picture']['ID'];
-                            } else {
-                                $id = $flavor['picture'];
+                        <?php
+                            foreach ($flavors as $flavor) {
+                                if($flavor['picture']['ID']) {
+                                    $id = $flavor['picture']['ID'];
+                                } else {
+                                    $id = $flavor['picture'];
+                                }
+
+                                if($flavor['vegan_option'] == "Yes") {
+                                    $v = '<i class=\'text-muted font-italic\'> (v)</i>';
+                                } else {
+                                    $v = '';
+                                }
+
+                                ?>
+                                <dd class="flavor-item item-text-chocolate">
+                                    <span
+                                        data-toggle="modal"
+                                        data-target="#modal-flavor"
+                                        data-picture="
+                                            <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
+                                        "
+                                        data-title="<?php echo $flavor['name'] . ' ' . $v; ?>"
+                                        class="text-capitalize"
+                                    >
+                                        <?php echo $flavor['name']; ?>
+                                    </span>
+                                    <?php echo $v; ?>
+                                </dd>
+                                <?php
                             }
-                            echo ('
-                            <dd class="flavor-item item-text-chocolate">
-                                <span
-                                    data-toggle="modal"
-                                    data-target="#modal-flavor"
-                                    data-picture="
-                                        <img class=\'img-fluid rounded frame\' src=' . wp_get_attachment_image_src($id, '', false)[0] . ' />
-                                    "
-                                    data-title="' . $flavor['name'] . '"
-                                    class="text-capitalize"
-                                >
-                                    ' . $flavor['name'] . '
-                                </span>
-                            </dd>
-                            ');
-                        }
-                    ?>
+                        ?>
+
                 </dl>
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-down" data-aos-once="true">
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(36, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
+                <?php 
+                    if($toppings_picture['ID']) {
+                        echo wp_get_attachment_image($toppings_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    } else {
+                        echo wp_get_attachment_image($toppings_picture, '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    }
+                ?>
                 <h1 class="centered text-vanilla bg-text-2 m-0">
                     <span>
                         Toppings
@@ -137,23 +131,38 @@ $sauces = array(
             <div>
                 <dl class="font-size-big font-weight-light">
 
-                    <?php foreach ($toppings as $topping) {
-                        echo ('
+                    <?php
+                        foreach ($toppings as $topping) {
+                            if($topping['picture']['ID']) {
+                                $id = $topping['picture']['ID'];
+                            } else {
+                                $id = $topping['picture'];
+                            }
+
+                            if($topping['vegan_option'] == "Yes") {
+                                $v = '<i class=\'text-muted font-italic\'> (v)</i>';
+                            } else {
+                                $v = '';
+                            }
+
+                            ?>
                             <dd class="flavor-item item-text-green">
                                 <span
                                     data-toggle="modal"
                                     data-target="#modal-flavor"
                                     data-picture="
-                                        <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/slumber/toppings/' . str_replace(' ', '-', $topping) . '-slumber.jpg />
+                                        <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
                                     "
-                                    data-title="' . $topping . '"
+                                    data-title="<?php echo $topping['name'] . ' ' . $v; ?>"
                                     class="text-capitalize"
                                 >
-                                    ' . $topping . '
+                                    <?php echo $topping['name']; ?>
                                 </span>
+                                <?php echo $v; ?>
                             </dd>
-                        ');
-                    } ?>
+                            <?php
+                        }
+                    ?>
 
                 </dl>
             </div>
@@ -162,6 +171,13 @@ $sauces = array(
 
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(37, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
+                <?php 
+                    if($sauces_picture['ID']) {
+                        echo wp_get_attachment_image($sauces_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    } else {
+                        echo wp_get_attachment_image($sauces_picture, '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    }
+                ?>
                 <h1 class="centered text-vanilla bg-text-3 m-0">
                     <span>
                         Sauce
@@ -172,23 +188,41 @@ $sauces = array(
 
             <div>
                 <dl class="font-size-big font-weight-light">
-                    <?php foreach ($sauces as $sauce) {
-                        echo ('
+
+
+                    <?php
+                        foreach ($sauces as $sauce) {
+                            if($sauce['picture']['ID']) {
+                                $id = $sauce['picture']['ID'];
+                            } else {
+                                $id = $sauce['picture'];
+                            }
+
+                            if($sauce['vegan_option'] == "Yes") {
+                                $v = '<i class=\'text-muted font-italic\'> (v)</i>';
+                            } else {
+                                $v = '';
+                            }
+
+                            ?>
                             <dd class="flavor-item item-text-pink">
                                 <span
                                     data-toggle="modal"
                                     data-target="#modal-flavor"
                                     data-picture="
-                                        <img class=\'img-fluid rounded frame\' src=' . content_url() . '/themes/bajozero/pictures/slumber/sauces/' . str_replace(' ', '-', $sauce) . '-slumber.jpg />
+                                        <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
                                     "
-                                    data-title="' . $sauce . '"
+                                    data-title="<?php echo $sauce['name'] . ' ' . $v; ?>"
                                     class="text-capitalize"
                                 >
-                                    ' . $sauce . '
+                                    <?php echo $sauce['name']; ?>
                                 </span>
+                                <?php echo $v; ?>
                             </dd>
-                        ');
-                    } ?>
+                            <?php
+                        }
+                    ?>
+
                 </dl>
             </div>
         </div>
@@ -222,26 +256,26 @@ $sauces = array(
                             <dl class="list-unstyled">
                                 <dd>
                                     <span class="font-size-big">
-                                        1 flavor: &#8353;1500
+                                        1 flavor: &#8353;<?php echo $price_ice_cream['1_flavor']['colones']; ?>
                                     </span>
                                     <span class="text-muted">
-                                        (&#36;3)
+                                        (&#36;<?php echo $price_ice_cream['1_flavor']['dollars']; ?>)
                                     </span>
                                 </dd>
                                 <dd>
                                     <span class="font-size-big">
-                                        2 flavors: &#8353;2000
+                                        2 flavors: &#8353;<?php echo $price_ice_cream['2_flavors']['colones']; ?>
                                     </span>
                                     <span class="text-muted">
-                                        (&#36;4)
+                                        (&#36;<?php echo $price_ice_cream['2_flavors']['dollars']; ?>)
                                     </span>
                                 </dd>
                                 <dd>
                                     <span class="font-size-big">
-                                        3 flavors: &#8353;2250
+                                        3 flavors: &#8353;<?php echo $price_ice_cream['3_flavors']['colones']; ?>
                                     </span>
                                     <span class="text-muted">
-                                        (&#36;5)
+                                        (&#36;<?php echo $price_ice_cream['3_flavors']['dollars']; ?>)
                                     </span>
                                 </dd>
                             </dl>
@@ -259,18 +293,18 @@ $sauces = array(
                             <dl class="list-unstyled">
                                 <dd>
                                     <span class="font-size-big">
-                                        1 topping: + &#8353;500
+                                        1 topping: + &#8353;<?php echo $price_toppings['1_topping']['colones']; ?>
                                     </span>
                                     <span class="text-muted">
-                                        (&#36;1)
+                                        (&#36;<?php echo $price_toppings['1_topping']['dollars']; ?>)
                                     </span>
                                 </dd>
                                 <dd>
                                     <span class="font-size-big">
-                                        2 toppings: + &#8353;1000
+                                        2 toppings: + &#8353;<?php echo $price_toppings['2_toppings']['colones']; ?>
                                     </span>
                                     <span class="text-muted">
-                                        (&#36;2)
+                                        (&#36;<?php echo $price_toppings['2_toppings']['dollars']; ?>)
                                     </span>
                                 </dd>
                             </dl>
@@ -288,10 +322,10 @@ $sauces = array(
                             <dl class="list-unstyled">
                                 <dd>
                                     <span class="font-size-big">
-                                        Any sauce: + &#8353;500
+                                        Any sauce: + &#8353;<?php echo $price_sauces['1_sauce']['colones']; ?>
                                     </span>
                                     <span class="text-muted">
-                                        (&#36;1)
+                                        (&#36;<?php echo $price_sauces['1_sauce']['dollars']; ?>)
                                     </span>
                                 </dd>
                             </dl>
@@ -301,24 +335,53 @@ $sauces = array(
             </div>
 
             <p class="text-center font-italic text-muted">
-                Price range: &#8353;1500 to &#8353;3750 (&#36;3 to &#36;7)
+                <?php 
+                    $total_colones =
+                        $price_ice_cream['3_flavors']['colones'] +
+                        $price_toppings['2_toppings']['colones'] +
+                        $price_sauces['1_sauce']['colones']
+                    ;
+                    $total_dollars =
+                        $price_ice_cream['3_flavors']['dollars'] +
+                        $price_toppings['2_toppings']['dollars'] +
+                        $price_sauces['1_sauce']['dollars']
+                    ;
+                ?>
+                Price range: &#8353;<?php echo $price_ice_cream['1_flavor']['colones']; ?> to &#8353;<?php echo $total_colones; ?> (&#36;<?php echo $price_ice_cream['1_flavor']['dollars']; ?> to &#36;<?php echo $total_dollars; ?>)
             </p>
 
         </div>
     </div>
-
 </div>
 
-<div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
-    <p>
-        <?php echo wp_get_attachment_image(38, '', false, 'class=img-quote rounded shadow-picture-sm img-fluid') ?>
-    </p>
+<?php
+    if($quote['display'] == "Yes") { ?>
+        <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
+            <p>
+                <?php 
+                    if($quote['picture']['ID']) {
+                        echo wp_get_attachment_image($quote['picture']['ID'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
+                    } else {
+                        echo wp_get_attachment_image($quote['picture'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
+                    }
+                ?>
+            </p>
 
-    <blockquote class="h3 blockquote">
-        <p class="m-0 text-green font-italic animated pulse infinite slow">Ice-cream is the favorite currency of love.</p>
-        <footer class="blockquote-footer text-pink">Puck</footer>
-    </blockquote>
+            <blockquote class="h3 blockquote">
+                <p class="m-0 text-green font-italic animated pulse infinite slow">
+                    <?php echo $quote['content']; ?>
+                </p>
+                <footer class="blockquote-footer text-pink">
+                    <?php echo $quote['author']; ?>
+                </footer>
+            </blockquote>
 
-</div>
+        </div>
+<?php
+    } else { ?>
+        <hr class="divider w-50 my-5 py-5" />
+    <?php 
+    }
+?>
 
 <?php get_footer(); ?>

@@ -1,5 +1,3 @@
-<!-- Front page -->
-
 <?php 
 
 $text_top = get_field('text_top');
@@ -15,9 +13,9 @@ $card_1 = $cards['card_1'];
 $card_2 = $cards['card_2'];
 $card_3 = $cards['card_3'];
 
-?>
+get_header();
 
-<?php get_header(); ?>
+?>
 
 
 <div class="bg-container">
@@ -147,8 +145,10 @@ $card_3 = $cards['card_3'];
     <div class="row featurette py-5 px-md-5 align-items-center">
         <div class="col-md-7 pr-5" data-aos="slide-right" data-aos-once="true">
             <h2 class="featurette-heading">
-                <!-- This is our team. <span class="text-pink">And we are here for you</span> -->
-                <?php echo $row_1['title']; ?>
+                <?php echo $row_1['title_1']; ?>
+                <span class="text-pink">
+                    <?php echo $row_1['title_2']; ?>
+                </span>
             </h2>
             <p class="lead">
                 <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
@@ -173,7 +173,10 @@ $card_3 = $cards['card_3'];
         <div class="col-md-7 order-md-2" data-aos="slide-left" data-aos-once="true">
             <h2 class="featurette-heading">
                 <!-- Oh yeah, it’s good. <span class="text-orange">Latest flavor: caramel & vanilla.</span> -->
-                <?php echo $row_2['title']; ?>
+                <?php echo $row_2['title_1']; ?>
+                <span class="text-orange">
+                    <?php echo $row_2['title_2']; ?>
+                </span>
             </h2>
             <p class="lead">
                 <!-- Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. -->
@@ -202,7 +205,10 @@ $card_3 = $cards['card_3'];
                         here
                     </a>
                 </span> -->
-                <?php echo  $row_3['title']; ?>
+                <?php echo  $row_3['title_1']; ?>
+                <span class="text-green">
+                    <?php echo  $row_3['title_2']; ?>
+                </span>
             </h2>
             <p class="lead">
                 <!-- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->

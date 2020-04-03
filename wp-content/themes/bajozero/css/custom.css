@@ -478,18 +478,6 @@ textarea {
   background-size: cover;
 }
 
-.item-row-shop-1 {
-  background-image: url("../pictures/shop-map.jpg");
-}
-
-.item-row-shop-2 {
-  background-image: url("../pictures/slumber/shop/shop-front-slumber.jpg");
-}
-
-.item-row-shop-3 {
-  background-image: url("../pictures/team.jpg");
-}
-
 .container-hiring {
   height: 250px;
 }
@@ -516,10 +504,10 @@ textarea {
 .video-container {
   overflow: hidden;
   height: 500px;
-  background: url("../pictures/slumber/shop/shop-front-slumber.jpg");
+  /* background: url("../pictures/slumber/shop/shop-front-slumber.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .video-container video {
@@ -537,6 +525,11 @@ textarea {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+#bg-row-1-shop {
+  z-index: -1;
+  position: absolute;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
