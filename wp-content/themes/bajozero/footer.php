@@ -9,7 +9,7 @@
             <div class="row align-items-center align-items-center">
                 <div class="col-12 col-md-6">
                     <div class="mb-3">
-                        <?php echo wp_get_attachment_image(92, '', false, 'class=logo-lg') ?>
+                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" alt="" class="logo-lg" />
                     </div>
                     <span class="text-vanilla text-uppercase text-shadow">
                         &copy; Copyright 2020 Bajo Zero. All right reserved.
