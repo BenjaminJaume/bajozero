@@ -75,7 +75,7 @@ $section_map = get_field('section_map');
         </div>
         <div class="col-12 col-sm-8 col-md-6 text-center mx-auto px-md-5" data-aos="fade-left" data-aos-once="true">
             <div class="form-group m-0">
-                <?php echo do_shortcode('[contact-form-7 id="76" title="Contact form"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="17" title="Contact form"]'); ?>
             </div>
         </div>
     </div>

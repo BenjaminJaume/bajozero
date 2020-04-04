@@ -208,7 +208,7 @@ get_header();
 <div class="container mt-5">
     <div class="card-deck card-deck-front-page justify-content-center mb-3 text-center">
         <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-once="true">
-            <div class="card-header rounded-top">
+            <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
                 <h4 class="my-0 font-weight-light">
                     <?php echo $card_1['title']; ?>
                 </h4>
@@ -243,7 +243,7 @@ get_header();
             </div>
         </div>
         <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
-            <div class="card-header rounded-top">
+            <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
                 <h4 class="my-0 font-weight-light">
                     <?php echo $card_2['title']; ?>
                 </h4>
@@ -278,7 +278,7 @@ get_header();
             </div>
         </div>
         <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="400" data-aos-once="true">
-            <div class="card-header rounded-top">
+            <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
                 <h4 class="my-0 font-weight-light">
                     <?php echo $card_3['title']; ?>
                 </h4>

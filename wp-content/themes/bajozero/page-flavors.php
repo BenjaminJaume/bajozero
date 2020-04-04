@@ -4,9 +4,7 @@
  Template Name: Flavors
  */
 
-$flavors_picture = get_field('flavors_picture');
-$toppings_picture = get_field('toppings_picture');
-$sauces_picture = get_field('sauces_picture');
+$top_pictures = get_field('top_pictures');
 
 $flavors = get_field('flavors');
 $toppings = get_field('toppings');
@@ -59,10 +57,10 @@ $quote = get_field('quote');
         <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
                 <?php 
-                    if($flavors_picture['ID']) {
-                        echo wp_get_attachment_image($flavors_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    if($top_pictures['flavors_picture']['ID']) {
+                        echo wp_get_attachment_image($top_pictures['flavors_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
                     } else {
-                        echo wp_get_attachment_image($flavors_picture, '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                        echo wp_get_attachment_image($top_pictures['flavors_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
                     }
                 ?>
                 <h1 class="centered text-vanilla bg-text-1 m-0">
@@ -115,10 +113,10 @@ $quote = get_field('quote');
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(36, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <?php 
-                    if($toppings_picture['ID']) {
-                        echo wp_get_attachment_image($toppings_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    if($top_pictures['toppings_picture']['ID']) {
+                        echo wp_get_attachment_image($top_pictures['toppings_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
                     } else {
-                        echo wp_get_attachment_image($toppings_picture, '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                        echo wp_get_attachment_image($top_pictures['toppings_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
                     }
                 ?>
                 <h1 class="centered text-vanilla bg-text-2 m-0">
@@ -172,10 +170,10 @@ $quote = get_field('quote');
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(37, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <?php 
-                    if($sauces_picture['ID']) {
-                        echo wp_get_attachment_image($sauces_picture['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                    if($top_pictures['sauces_picture']['ID']) {
+                        echo wp_get_attachment_image($top_pictures['sauces_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
                     } else {
-                        echo wp_get_attachment_image($sauces_picture, '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                        echo wp_get_attachment_image($top_pictures['sauces_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
                     }
                 ?>
                 <h1 class="centered text-vanilla bg-text-3 m-0">
