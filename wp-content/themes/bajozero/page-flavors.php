@@ -54,7 +54,7 @@ $quote = get_field('quote');
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-right" data-aos-once="true">
+        <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
                 <?php 
                     if($top_pictures['flavors_picture']['ID']) {
@@ -109,7 +109,7 @@ $quote = get_field('quote');
                 </dl>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 text-center" data-aos="fade-down" data-aos-once="true">
+        <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0" data-aos="fade-down" data-aos-once="true">
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(36, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
                 <?php 
@@ -165,7 +165,7 @@ $quote = get_field('quote');
                 </dl>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 text-center mx-sm-auto" data-aos="fade-left" data-aos-once="true">
+        <div class="col-12 col-sm-6 col-md-4 text-center mx-sm-auto mb-5 mb-md-0" data-aos="fade-left" data-aos-once="true">
 
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(37, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
@@ -235,7 +235,7 @@ $quote = get_field('quote');
     </div>
 </div>
 
-<div class="container-fluid price-container my-5" data-aos="fade-down" data-aos-once="true">
+<div class="container-fluid bg-vanilla my-5" data-aos="fade-down" data-aos-once="true">
     <div class="row">
         <div class="col-12 col-sm-10 col-md-8 mx-auto">
             <h1 class="title-green display-4 text-center text-uppercase">

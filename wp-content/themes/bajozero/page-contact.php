@@ -92,9 +92,9 @@ $section_map = get_field('section_map');
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto frame">
-                    <?php // echo do_shortcode('[wpgmza id="1"]'); ?>
-                    <iframe
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+                    <div class="frame">
+                        <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.371813821639!2d-85.44061568520051!3d10.62819579242223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f757d2b24d3791d%3A0x40a80dc7cdbb02e7!2sHelader%C3%ADa%20Bajo%20Zero!5e0!3m2!1sen!2scr!4v1585854492094!5m2!1sen!2scr"
                         width="100%"
                         height="500" 
@@ -103,7 +103,8 @@ $section_map = get_field('section_map');
                         allowfullscreen=""
                         aria-hidden="false"
                         tabindex="0"
-                    ></iframe>
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </div>
