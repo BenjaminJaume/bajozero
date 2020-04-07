@@ -1,3 +1,13 @@
+<?php
+
+$facebook_url = get_field('facebook', 7);
+$google_maps_url = get_field('google_maps', 7);
+$instagram_url = get_field('instagram', 7);
+$messenger_url = get_field('messenger', 7);
+$mail = get_field('mail', 7);
+
+?>
+
 <div data-aos="fade-up" data-aos-once="true">
 
     <div class="footer-top">
@@ -20,27 +30,27 @@
                     <p class="text-vanilla text-uppercase mt-2 text-shadow">Bajo Zero on social medias</p>
                     <ul class="social-media-icon mx-auto mb-5">
                         <li>
-                            <a href="https://www.facebook.com/BajoZeroCostaRica" alt="" target="_blank">
+                            <a href="<?php echo $facebook_url; ?>" alt="" target="_blank">
                                 <i class="fab fa-facebook-square facebook-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://g.page/BajoZeroCostaRica" alt="" target="_blank">
+                            <a href="<?php echo $google_maps_url; ?>" alt="" target="_blank">
                                 <i class="fas fa-map-marked-alt maps-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/heladeria_bajozero" alt="" target="_blank">
+                            <a href="<?php echo $instagram_url; ?>" alt="" target="_blank">
                                 <i class="fab fa-instagram-square instagram-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://m.me/BajoZeroCostaRica" alt="" target="_blank">
+                            <a href="<?php echo $messenger_url; ?>" alt="" target="_blank">
                                 <i class="fab fa-facebook-messenger messenger-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:heladeriabajozerocr@gmail.com" alt="" target="_blank">
+                            <a href="mailto:<?php echo $mail; ?>" alt="" target="_blank">
                                 <i class="fas fa-envelope-square mail-icon"></i>
                             </a>
                         </li>

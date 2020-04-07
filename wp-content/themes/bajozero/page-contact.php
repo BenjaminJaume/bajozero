@@ -6,9 +6,11 @@
 
 $caption = get_field('caption');
 $top_message = get_field('top_message');
-$address = get_field('address');
-$mail = get_field('mail');
-$social_media = get_field('social_media');
+$label = get_field('label', 7);
+$address = get_field('address', 7);
+$google_maps_url = get_field('google_maps_url', 7);
+$mail = get_field('mail', 7);
+$facebook_url = get_field('facebook', 7);
 $section_map = get_field('section_map');
 
 ?>
@@ -44,7 +46,7 @@ $section_map = get_field('section_map');
     </div>
     <div class="row bg-vanilla align-items-center py-5 rounded-bottom">
         <div class="col-12 col-md-6 text-center mx-auto mb-5 mb-md-0" data-aos="fade-right" data-aos-once="true">
-            <a href="/bajozero/contact" alt="" class="link-chocolate text-decoration-none">
+            <a href="<?php echo $google_maps_url; ?>" alt="" class="link-chocolate text-decoration-none">
                 <span class="text-chocolate">
                     <i class="fas fa-map-marker-alt fa-2x"></i>
                 </span>
@@ -64,12 +66,12 @@ $section_map = get_field('section_map');
                 </p>
             </a>
 
-            <a href="<?php echo $social_media['link']; ?>" alt="" class="link-chocolate text-decoration-none">
+            <a href="<?php echo $facebook_url; ?>" alt="" class="link-chocolate text-decoration-none">
                 <span class="text-chocolate">
                     <i class="fab fa-facebook fa-2x"></i>
                 </span>
                 <p class="m-0">
-                    <a href="<?php echo $social_media['link']; ?>" class="link-chocolate text-decoration-none"><?php echo $social_media['label']; ?></a>
+                    <a href="<?php echo $facebook_url; ?>" class="link-chocolate text-decoration-none"><?php echo $label; ?></a>
                 </p>
             </a>
         </div>
