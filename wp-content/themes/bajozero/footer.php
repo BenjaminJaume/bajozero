@@ -19,7 +19,7 @@ $mail = get_field('mail', 7);
             <div class="row align-items-center align-items-center">
                 <div class="col-12 col-md-6">
                     <div class="mb-3">
-                        <img src="<?php echo content_url() . '/themes/bajozero/pictures/logo.png' ?>" alt="" class="logo-lg" />
+                        <img src="<?php echo get_template_directory_uri() . '/pictures/logo.png' ?>" alt="" class="logo-lg" />
                     </div>
                     <span class="text-vanilla text-uppercase text-shadow">
                         &copy; Copyright 2020 Bajo Zero. All right reserved.

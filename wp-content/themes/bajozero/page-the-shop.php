@@ -29,7 +29,7 @@ $quote = get_field('quote');
             }
         ?>
         <video autoplay loop muted class="slumber bg-0-50-black">
-            <source src="<?php echo content_url() . '/themes/bajozero/pictures/videos/presentation.mp4' ?>" type="video/mp4">
+            <source src="<?php echo get_template_directory_uri() . '/pictures/videos/presentation.mp4' ?>" type="video/mp4">
         </video>
         <span class="centered m-0">
             <h1 class="title-vanilla display-2 text-uppercase">
