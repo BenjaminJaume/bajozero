@@ -52,16 +52,16 @@ $quote = get_field('quote');
     </div>
 </div>
 
-<div class="container mt-5">
+<div class="container-fluid mt-5">
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0" data-aos="fade-right" data-aos-once="true">
             <div class="img-text-container mb-3">
-                <?php 
-                    if($top_pictures['flavors_picture']['ID']) {
-                        echo wp_get_attachment_image($top_pictures['flavors_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
-                    } else {
-                        echo wp_get_attachment_image($top_pictures['flavors_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
-                    }
+                <?php
+                if ($top_pictures['flavors_picture']['ID']) {
+                    echo wp_get_attachment_image($top_pictures['flavors_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                } else {
+                    echo wp_get_attachment_image($top_pictures['flavors_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                }
                 ?>
                 <h1 class="centered text-vanilla bg-text-1 m-0">
                     <span>
@@ -73,38 +73,32 @@ $quote = get_field('quote');
             <div>
                 <dl class="font-size-big font-weight-light">
 
-                        <?php
-                            foreach ($flavors as $flavor) {
-                                if($flavor['picture']['ID']) {
-                                    $id = $flavor['picture']['ID'];
-                                } else {
-                                    $id = $flavor['picture'];
-                                }
+                    <?php
+                    foreach ($flavors as $flavor) {
+                        if ($flavor['picture']['ID']) {
+                            $id = $flavor['picture']['ID'];
+                        } else {
+                            $id = $flavor['picture'];
+                        }
 
-                                if($flavor['vegan_option'] == "Yes") {
-                                    $v = '<i class=\'text-muted font-italic\'> (v)</i>';
-                                } else {
-                                    $v = '';
-                                }
+                        if ($flavor['vegan_option'] == "Yes") {
+                            $v = '<i class=\'text-muted font-italic\'> (v)</i>';
+                        } else {
+                            $v = '';
+                        }
 
-                                ?>
-                                <dd class="flavor-item item-text-chocolate">
-                                    <span
-                                        data-toggle="modal"
-                                        data-target="#modal-flavor"
-                                        data-picture="
+                    ?>
+                        <dd class="flavor-item item-text-chocolate">
+                            <span data-toggle="modal" data-target="#modal-flavor" data-picture="
                                             <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
-                                        "
-                                        data-title="<?php echo $flavor['name'] . ' ' . $v; ?>"
-                                        class="text-capitalize"
-                                    >
-                                        <?php echo $flavor['name']; ?>
-                                    </span>
-                                    <?php echo $v; ?>
-                                </dd>
-                                <?php
-                            }
-                        ?>
+                                        " data-title="<?php echo $flavor['name'] . ' ' . $v; ?>" class="text-capitalize">
+                                <?php echo $flavor['name']; ?>
+                            </span>
+                            <?php echo $v; ?>
+                        </dd>
+                    <?php
+                    }
+                    ?>
 
                 </dl>
             </div>
@@ -112,12 +106,12 @@ $quote = get_field('quote');
         <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0" data-aos="fade-down" data-aos-once="true">
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(36, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
-                <?php 
-                    if($top_pictures['toppings_picture']['ID']) {
-                        echo wp_get_attachment_image($top_pictures['toppings_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
-                    } else {
-                        echo wp_get_attachment_image($top_pictures['toppings_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
-                    }
+                <?php
+                if ($top_pictures['toppings_picture']['ID']) {
+                    echo wp_get_attachment_image($top_pictures['toppings_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                } else {
+                    echo wp_get_attachment_image($top_pictures['toppings_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                }
                 ?>
                 <h1 class="centered text-vanilla bg-text-2 m-0">
                     <span>
@@ -130,36 +124,30 @@ $quote = get_field('quote');
                 <dl class="font-size-big font-weight-light">
 
                     <?php
-                        foreach ($toppings as $topping) {
-                            if($topping['picture']['ID']) {
-                                $id = $topping['picture']['ID'];
-                            } else {
-                                $id = $topping['picture'];
-                            }
-
-                            if($topping['vegan_option'] == "Yes") {
-                                $v = '<i class=\'text-muted font-italic\'> (v)</i>';
-                            } else {
-                                $v = '';
-                            }
-
-                            ?>
-                            <dd class="flavor-item item-text-green">
-                                <span
-                                    data-toggle="modal"
-                                    data-target="#modal-flavor"
-                                    data-picture="
-                                        <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
-                                    "
-                                    data-title="<?php echo $topping['name'] . ' ' . $v; ?>"
-                                    class="text-capitalize"
-                                >
-                                    <?php echo $topping['name']; ?>
-                                </span>
-                                <?php echo $v; ?>
-                            </dd>
-                            <?php
+                    foreach ($toppings as $topping) {
+                        if ($topping['picture']['ID']) {
+                            $id = $topping['picture']['ID'];
+                        } else {
+                            $id = $topping['picture'];
                         }
+
+                        if ($topping['vegan_option'] == "Yes") {
+                            $v = '<i class=\'text-muted font-italic\'> (v)</i>';
+                        } else {
+                            $v = '';
+                        }
+
+                    ?>
+                        <dd class="flavor-item item-text-green">
+                            <span data-toggle="modal" data-target="#modal-flavor" data-picture="
+                                        <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
+                                    " data-title="<?php echo $topping['name'] . ' ' . $v; ?>" class="text-capitalize">
+                                <?php echo $topping['name']; ?>
+                            </span>
+                            <?php echo $v; ?>
+                        </dd>
+                    <?php
+                    }
                     ?>
 
                 </dl>
@@ -169,12 +157,12 @@ $quote = get_field('quote');
 
             <div class="img-text-container mb-3">
                 <?php echo wp_get_attachment_image(37, '', false, 'class=img-flavors-page img-fluid frame bg-0-50') ?>
-                <?php 
-                    if($top_pictures['sauces_picture']['ID']) {
-                        echo wp_get_attachment_image($top_pictures['sauces_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
-                    } else {
-                        echo wp_get_attachment_image($top_pictures['sauces_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
-                    }
+                <?php
+                if ($top_pictures['sauces_picture']['ID']) {
+                    echo wp_get_attachment_image($top_pictures['sauces_picture']['ID'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                } else {
+                    echo wp_get_attachment_image($top_pictures['sauces_picture'], '', false, 'class=img-flavors-page img-fluid frame bg-0-50');
+                }
                 ?>
                 <h1 class="centered text-vanilla bg-text-3 m-0">
                     <span>
@@ -186,39 +174,31 @@ $quote = get_field('quote');
 
             <div>
                 <dl class="font-size-big font-weight-light">
-
-
                     <?php
-                        foreach ($sauces as $sauce) {
-                            if($sauce['picture']['ID']) {
-                                $id = $sauce['picture']['ID'];
-                            } else {
-                                $id = $sauce['picture'];
-                            }
-
-                            if($sauce['vegan_option'] == "Yes") {
-                                $v = '<i class=\'text-muted font-italic\'> (v)</i>';
-                            } else {
-                                $v = '';
-                            }
-
-                            ?>
-                            <dd class="flavor-item item-text-pink">
-                                <span
-                                    data-toggle="modal"
-                                    data-target="#modal-flavor"
-                                    data-picture="
-                                        <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
-                                    "
-                                    data-title="<?php echo $sauce['name'] . ' ' . $v; ?>"
-                                    class="text-capitalize"
-                                >
-                                    <?php echo $sauce['name']; ?>
-                                </span>
-                                <?php echo $v; ?>
-                            </dd>
-                            <?php
+                    foreach ($sauces as $sauce) {
+                        if ($sauce['picture']['ID']) {
+                            $id = $sauce['picture']['ID'];
+                        } else {
+                            $id = $sauce['picture'];
                         }
+
+                        if ($sauce['vegan_option'] == "Yes") {
+                            $v = '<i class=\'text-muted font-italic\'> (v)</i>';
+                        } else {
+                            $v = '';
+                        }
+
+                    ?>
+                        <dd class="flavor-item item-text-pink">
+                            <span data-toggle="modal" data-target="#modal-flavor" data-picture="
+                                        <img class='img-fluid rounded slumber frame' src=<?php echo wp_get_attachment_image_src($id, '', false)[0]; ?> />
+                                    " data-title="<?php echo $sauce['name'] . ' ' . $v; ?>" class="text-capitalize">
+                                <?php echo $sauce['name']; ?>
+                            </span>
+                            <?php echo $v; ?>
+                        </dd>
+                    <?php
+                    }
                     ?>
 
                 </dl>
@@ -333,17 +313,15 @@ $quote = get_field('quote');
             </div>
 
             <p class="text-center font-italic text-muted">
-                <?php 
-                    $total_colones =
-                        $price_ice_cream['3_flavors']['colones'] +
-                        $price_toppings['2_toppings']['colones'] +
-                        $price_sauces['1_sauce']['colones']
-                    ;
-                    $total_dollars =
-                        $price_ice_cream['3_flavors']['dollars'] +
-                        $price_toppings['2_toppings']['dollars'] +
-                        $price_sauces['1_sauce']['dollars']
-                    ;
+                <?php
+                $total_colones =
+                    $price_ice_cream['3_flavors']['colones'] +
+                    $price_toppings['2_toppings']['colones'] +
+                    $price_sauces['1_sauce']['colones'];
+                $total_dollars =
+                    $price_ice_cream['3_flavors']['dollars'] +
+                    $price_toppings['2_toppings']['dollars'] +
+                    $price_sauces['1_sauce']['dollars'];
                 ?>
                 Price range: &#8353;<?php echo $price_ice_cream['1_flavor']['colones']; ?> to &#8353;<?php echo $total_colones; ?> (&#36;<?php echo $price_ice_cream['1_flavor']['dollars']; ?> to &#36;<?php echo $total_dollars; ?>)
             </p>
@@ -353,36 +331,36 @@ $quote = get_field('quote');
 </div>
 
 <?php
-    if($quote['display'] == "Yes") { ?>
+if ($quote['display'] == "Yes") { ?>
 
-        <hr class="divider w-50" />
+    <hr class="divider w-50" />
 
-        <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
-            <p>
-                <?php 
-                    if($quote['picture']['ID']) {
-                        echo wp_get_attachment_image($quote['picture']['ID'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
-                    } else {
-                        echo wp_get_attachment_image($quote['picture'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
-                    }
-                ?>
+    <div class="container text-center my-5" data-aos="fade-up" data-aos-once="true">
+        <p>
+            <?php
+            if ($quote['picture']['ID']) {
+                echo wp_get_attachment_image($quote['picture']['ID'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
+            } else {
+                echo wp_get_attachment_image($quote['picture'], '', false, 'class=img-quote rounded slumber shadow-picture-sm img-fluid');
+            }
+            ?>
+        </p>
+
+        <blockquote class="h3 blockquote">
+            <p class="m-0 text-green font-italic animated pulse infinite slow">
+                <?php echo $quote['content']; ?>
             </p>
+            <footer class="blockquote-footer text-pink">
+                <?php echo $quote['author']; ?>
+            </footer>
+        </blockquote>
 
-            <blockquote class="h3 blockquote">
-                <p class="m-0 text-green font-italic animated pulse infinite slow">
-                    <?php echo $quote['content']; ?>
-                </p>
-                <footer class="blockquote-footer text-pink">
-                    <?php echo $quote['author']; ?>
-                </footer>
-            </blockquote>
-
-        </div>
+    </div>
 <?php
-    } else { ?>
-        <hr class="divider w-50 my-5 py-5" />
-    <?php 
-    }
+} else { ?>
+    <hr class="divider w-50 my-5 py-5" />
+<?php
+}
 ?>
 
 <?php get_footer(); ?>
